@@ -1,0 +1,691 @@
+<html><head><meta charset="utf-8"><style>
+body{font-family:Georgia,serif;max-width:820px;margin:50px auto;line-height:1.7;font-size:13.5px;color:#111}
+h1{font-size:20px;line-height:1.3;margin-bottom:6px}
+h2{font-size:16px;margin-top:36px;border-bottom:1px solid #ccc;padding-bottom:4px}
+h3{font-size:14px;margin-top:20px;font-style:italic}
+p{margin:10px 0;text-align:justify}
+.meta{color:#444;font-size:12px;margin:2px 0}
+hr{border:none;border-top:1px solid #aaa;margin:20px 0}
+</style></head><body>
+<h1>Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6)
+experimental design and organization</h1>
+<p class="meta"><b>Authors:</b> Veronika Eyring, Sandrine Bony, Gerald A. Meehl, Catherine A. Senior, Bjorn Stevens, Ronald J. Stouffer, Karl E. Taylor</p>
+<p class="meta"><b>Journal:</b> Geoscientific Model Development, 2016</p>
+<p class="meta"><b>DOI:</b> 10.5194/gmd-9-1937-2016</p>
+<hr>
+<h2>Abstract</h2>
+<p>By coordinating the design and distribution of global
+climate model simulations of the past, current, and future climate, the
+Coupled Model Intercomparison Project (CMIP) has become one of the
+foundational elements of climate science. However, the need to address an
+ever-expanding range of scientific questions arising from more and more
+research communities has made it necessary to revise the organization of
+CMIP. After a long and wide community consultation, a new and more federated
+structure has been put in place. It consists of three major elements: (1) a
+handful of common experiments, the DECK (Diagnostic, Evaluation and
+Characterization of Klima) and CMIP historical simulations (1850–near present) that will maintain continuity and help document basic
+characteristics of models across different phases of CMIP; (2) common
+standards, coordination, infrastructure, and documentation that will
+facilitate the distribution of model outputs and the characterization of the
+model ensemble; and (3) an ensemble of CMIP-Endorsed Model Intercomparison
+Projects (MIPs) that will be specific to a particular phase of CMIP (now
+CMIP6) and that will build on the DECK and CMIP historical simulations to
+address a large range of specific questions and fill the scientific gaps of
+the previous CMIP phases. The DECK and CMIP historical simulations, together
+with the use of CMIP data standards, will be the entry cards for models
+participating in CMIP. Participation in CMIP6-Endorsed MIPs by individual
+modelling groups will be at their own discretion and will depend on their
+scientific interests and priorities. With the Grand Science Challenges of
+the World Climate Research Programme (WCRP) as its scientific backdrop,
+CMIP6 will address three broad questions:
+How does the Earth system
+respond to forcing?What are the origins and consequences of
+systematic model biases?How can we assess future climate changes
+given internal climate variability, predictability, and uncertainties in
+scenarios?
+This CMIP6 overview paper presents the background and rationale
+for the new structure of CMIP, provides a detailed description of the DECK
+and CMIP6 historical simulations, and includes a brief introduction to the
+21 CMIP6-Endorsed MIPs.</p>
+<h2>Introduction</h2>
+<p>The Coupled Model Intercomparison Project (CMIP) organized under the
+auspices of the World Climate Research Programme&#x27;s (WCRP) Working Group on
+Coupled Modelling (WGCM) started 20 years ago as a comparison of a
+handful of early global coupled climate models performing experiments using
+atmosphere models coupled to a dynamic ocean, a simple land surface, and
+thermodynamic sea ice (Meehl et al., 1997). It has since evolved
+over five phases into a major international multi-model research activity
+(Meehl et al., 2000, 2007; Taylor et al., 2012) that has
+not only introduced a new era to climate science research but has also
+become a central element of national and international assessments of
+climate change (e.g. IPCC, 2013). An important part of
+CMIP is to make the multi-model output publicly available in a
+standardized format for analysis by the wider climate community and users.
+The standardization of the model output in a specified format, and the
+collection, archival, and access of the model output through the Earth
+System Grid Federation (ESGF) data replication centres have facilitated
+multi-model analyses.</p>
+<p>The objective of CMIP is to better understand past, present, and future
+climate change arising from natural, unforced variability or in response to
+changes in radiative forcings in a multi-model context. Its increasing
+importance and scope is a tremendous success story, but this very success
+poses challenges for all involved. Coordination of the project has become
+more complex as CMIP includes more models with more processes all applied to
+a wider range of questions. To meet this new interest and to address a wide
+variety of science questions from more and more scientific research
+communities, reflecting the expanding scope of comprehensive modelling in
+climate science, has put pressure on CMIP to become larger and more
+extensive. Consequently, there has been an explosion in the diversity and
+volume of requested CMIP output from an increasing number of experiments
+causing challenges for CMIP&#x27;s technical infrastructure (Williams
+et al., 2015). Cultural and organizational challenges also arise from the
+tension between expectations that modelling centres deliver multiple model
+experiments to CMIP yet at the same time advance basic research in climate
+science.</p>
+<p>In response to these challenges, we have adopted a more federated structure
+for the sixth phase of CMIP (i.e. CMIP6) and subsequent phases. Whereas
+past phases of CMIP were usually described through a single overview paper,
+reflecting a centralized and relatively compact CMIP structure, this GMD
+special issue describes the new design and organization of CMIP, the suite
+of experiments, and its forcings, in a series of invited contributions. In
+this paper, we provide the overview and backdrop of the new CMIP structure
+as well as the main scientific foci that CMIP6 will address. We begin by
+describing the new organizational form for CMIP and the pressures that it
+was designed to alleviate (Sect. 2). It also contains a description of a
+small set of simulations for CMIP which are intended to be common to all
+participating models (Sect. 3), details of which are provided in the
+Appendix. We then present a brief overview of CMIP6 that serves as an
+introduction to the other contributions to this special issue (Sect. 4),
+and we close with a summary.</p>
+<h2>CMIP design – a more continuous and distributed organization</h2>
+<p>In preparing for CMIP6, the CMIP Panel (the authors of this paper), which
+traditionally has the responsibility for direct coordination and oversight
+of CMIP, initiated a 2-year process of community consultation. This
+consultation involved the modelling centres whose contributions form the
+substance of CMIP as well as communities that rely on CMIP model output for
+their work. Special meetings were organized to reflect on the successes of
+CMIP5 as well as the scientific gaps that remain or have since emerged. The
+consultation also sought input through a community survey, the scientific
+results of which are described by Stouffer et al. (2015). Four
+main issues related to the overall structure of CMIP were identified.</p>
+<p>First, we identified a growing appreciation of the scientific potential to
+use results across different CMIP phases. Such approaches, however, require an
+appropriate experimental design to facilitate the identification of an
+ensemble of models with particular properties drawn from different phases of
+CMIP (e.g. Rauser et al., 2014). At the same time, it was
+recognized that an increasing number of Model Intercomparison Projects
+(MIPs) were being organized independent of CMIP, the data structure and
+output requirements were often inconsistent, and the relationship between
+the models used in the various MIPs was often difficult to determine, in
+which context measures to help establish continuity across MIPs or phases of
+CMIP would also be welcome.</p>
+<p>Second, the scope of CMIP was taxing the resources of modelling centres
+making it impossible for many to consider contributing to all the proposed
+experiments. By providing a better basis to help modelling centres decide
+exactly which subset of experiments to perform, it was thought that it might
+be possible to minimize fragmented participation in CMIP6. A more federated
+experimental protocol could also encourage modelling centres to develop
+intercomparison studies based on their own strategic goals.</p>
+<p>Third, some centres expressed the view that the punctuated structure of CMIP
+had begun to distort the model development process. Defining a protocol that
+allowed modelling centres to decouple their model development from the CMIP
+schedule would offer additional flexibility, and perhaps encourage modelling
+centres to finalize their models and submit some of their results sooner on
+their own schedule.</p>
+<p>Fourth and finally, many groups expressed a desire for particular phases of
+CMIP to be more than just a collection of MIPs, but rather to reflect the
+strategic goals of the climate science community as, for instance,
+articulated by WCRP. By focusing a particular phase of CMIP around specific
+scientific issues, it was felt that the modelling resources could be more
+effectively applied to those scientific questions that had matured to a
+point where coordinated activities were expected to have substantial impact.</p>
+<p>A variety of mechanisms were proposed and intensely debated to address these
+issues. The outcome of these discussions is embodied in the new CMIP
+structure, which has three major components. First, the identification of a
+handful of common experiments, the Diagnostic, Evaluation and
+Characterization of Klima (DECK) experiments (klima is Greek for
+“climate”), and CMIP historical simulations, which can be used to establish
+model characteristics and serves as its entry card for participating in
+one of CMIP&#x27;s phases or in other MIPs organized between CMIP phases, as
+depicted in Fig. 1. Second, common standards, coordination, infrastructure,
+and documentation that facilitate the distribution of model outputs and the
+characterization of the model ensemble, and third, the adoption of a more
+federated structure, building on more autonomous CMIP-Endorsed MIPs.</p>
+<p>Realizing the idea of a particular phase of CMIP being centred on a
+collection of more autonomous MIPs required the development of procedures
+for soliciting and evaluating MIPs in light of the scientific focus chosen
+for CMIP6. These procedures were developed and implemented by the CMIP
+Panel. The responses to the CMIP5 survey helped inform a series of workshops
+and resulted in a draft experiment design for CMIP6. This initial design for
+CMIP6 was published in early 2014 (Meehl et al., 2014) and
+was open for comments from the wider community until mid-September 2014. In
+parallel to the open review of the design, the CMIP Panel distributed an
+open call for proposals for MIPs in April 2014. These proposals were broadly
+reviewed within WCRP with the goal to encourage and enhance synergies among
+the different MIPs, to avoid overlapping experiments, to fill gaps, and to
+help ensure that the WCRP Grand Science Challenges would be addressed.
+Revised MIP proposals were requested and evaluated by the CMIP Panel in
+summer 2015. The selection of MIPs was based on the CMIP Panel&#x27;s evaluation
+of ten endorsement criteria (Table 1). To ensure community engagement, an
+important criterion was that enough modelling groups (at least eight) were
+willing to perform all of the MIP&#x27;s highest priority (Tier 1) experiments
+and providing all the requested diagnostics needed to answer at least one of
+its leading science questions. For each of the selected CMIP6-Endorsed MIPs
+it turned out that at least ten modelling groups indicated their intent to
+participate in Tier 1 experiments at least, thus attesting to the wide
+appeal and level of science interest from the climate modelling community.</p>
+<h2>The DECK and CMIP historical simulations</h2>
+<p>The DECK comprises four baseline experiments: (a) a historical Atmospheric
+Model Intercomparison Project (amip) simulation, (b) a pre-industrial control
+simulation (piControl or esm-piControl), (c) a simulation forced by an abrupt quadrupling of
+CO2 (abrupt-4×CO2) and (d) a simulation forced by a 1 % yr-1 CO2
+increase (1pctCO2). CMIP also includes a historical simulation (historical or esm-hist) that spans
+the period of extensive instrumental temperature measurements from 1850 to
+the present. In naming the experiments, we distinguish between simulations
+with CO2 concentrations calculated and anthropogenic sources of
+CO2 prescribed (esm-piControl and esm-hist) and simulations with prescribed CO2
+concentrations (all others). Hereafter, models that can calculate
+atmospheric CO2 concentration and account for the fluxes of CO2
+between the atmosphere, the ocean, and biosphere are referred to as Earth
+System Models (ESMs).</p>
+<p>The DECK experiments are chosen (1) to provide continuity across past and
+future phases of CMIP, (2) to evolve as little as possible over time, (3) to
+be well established, and incorporate simulations that modelling centres
+perform anyway as part of their own development cycle, and (4) to be
+relatively independent of the forcings and scientific objectives of a
+specific phase of CMIP. The four DECK experiments and the CMIP historical
+simulations are well suited for quantifying and understanding important
+climate change response characteristics. Modelling groups also commonly
+perform simulations of the historical period, but reconstructions of the
+external conditions imposed on historical runs (e.g. land-use changes)
+continue to evolve significantly, influencing the simulated climate. In
+order to distinguish among the historical simulations performed under
+different phases of CMIP, the historical simulations are labelled with the
+phase (e.g. “CMIP5 historical” or “CMIP6 historical”). A similar argument could be made to
+exclude the AMIP experiments from the DECK. However, the AMIP experiments
+are simpler, more routine, and the dominating role of sea surface
+temperatures and the focus on recent decades means that for most purposes
+AMIP experiments from different phases of CMIP are more likely to provide
+the desired continuity.</p>
+<p>The persistence and consistency of the DECK will make it possible to track
+changes in performance and response characteristics over future generations
+of models and CMIP phases. Although the set of DECK experiments is not
+expected to evolve much, additional experiments may become enough well
+established as benchmarks (routinely run by modelling groups as they develop
+new model versions) so that in the future they might be migrated into the
+DECK. The common practice of including the DECK in model development efforts
+means that models can contribute to CMIP without carrying out additional
+computationally burdensome experiments. All of the DECK and the historical
+simulations were included in the core set of experiments performed under
+CMIP5 (Taylor et al., 2012), and all but the abrupt-4×CO2 simulation were
+included in even earlier CMIP phases.</p>
+<p>Under CMIP, credentials of the participating atmosphere–ocean general
+circulation models (AOGCMs) and ESMs are established by performing the DECK
+and CMIP historical simulations, so these experiments are required from all
+models. Together these experiments document the mean climate and response
+characteristics of models. They should be run for each model configuration
+used in a CMIP-Endorsed MIP. A change in model configuration includes any
+change that might affect its simulations other than noise expected from
+different realizations. This would include, for example, a change in model
+resolution, physical processes, or atmospheric chemistry treatment. If an
+ESM is used in both CO2-emission-driven mode and CO2-concentration-driven
+mode in subsequent CMIP6-Endorsed MIPs, then both emission-driven and concentration-driven
+control, and historical simulations should be done and they will be identical in all
+forcings except the treatment of CO2.</p>
+<p>The forcing data sets that will drive the DECK and CMIP6 historical
+simulations are described separately in a series of invited contributions to
+this special issue. These articles also include some discussion of
+uncertainty in the data sets. The data will be provided by the respective
+author teams and made publicly available through the ESGF using common
+metadata and formats.</p>
+<p>The historical forcings are based as far as possible on observations and
+cover the period 1850–2014. These include:
+emissions of short-lived species and long-lived greenhouse gases (GHGs),GHG concentrations,global gridded land-use forcing data sets,solar forcing,stratospheric aerosol data set (volcanoes),AMIP sea surface temperatures (SSTs) and sea ice concentrations (SICs),for simulations with prescribed aerosols, a new approach to prescribe
+aerosols in terms of optical properties and fractional change in cloud
+droplet effective radius to provide a more consistent representation of
+aerosol forcing, andfor models without ozone chemistry, time-varying gridded ozone concentrations
+and nitrogen deposition.
+Some models might require additional forcing data sets (e.g. black carbon on
+snow or anthropogenic dust). Allowing model groups to use different
+forcingHere, we distinguish between an applied input perturbation
+(e.g. the imposed change in some model constituent, property, or boundary
+condition), which we refer to somewhat generically as a “forcing”, and
+radiative forcing, which can be precisely defined. Even if the forcings are
+identical, the resulting radiative forcing depends on a model&#x27;s radiation scheme
+(among other factors) and will differ among models. data sets might better
+sample uncertainty, but makes it more difficult to assess the uncertainty in
+the response of models to the best estimate of the forcing, available to a
+particular CMIP phase. To avoid conflating uncertainty in the response of
+models to a given forcing, it is strongly preferred for models to be
+integrated with the same forcing in the entry card historical simulations,
+and for forcing uncertainty to be sampled in supplementary simulations that
+are proposed as part of DAMIP. In any case it is important that all forcing
+data sets are documented and are made available alongside the model output on
+the ESGF. Likewise to the extent modelling centres simplify forcings, for
+instance by regridding or smoothing in time or some other dimension, this
+should also be documented.</p>
+<p>For the future scenarios selected by ScenarioMIP, forcings are provided by
+the integrated assessment model (IAM) community for the period 2015–2100
+(or until 2300 for the extended simulations). For atmospheric emissions and
+concentrations as well as for land use, the forcings are harmonized across
+IAMs and scenarios using a similar procedure as in CMIP5 (van Vuuren et
+al., 2011). This procedure ensures consistency with historical forcing
+data sets and between the different forcing categories. The selection of
+scenarios and the main characteristics are described elsewhere in this
+special issue, while the underlying IAM scenarios are described in a special issue in Global Environmental Change.</p>
+<p>An important gap identified in CMIP5, and in previous CMIP phases, was a
+lack of careful quantification of the radiative forcings from the different
+specified external forcing factors (e.g. GHGs, sulphate aerosols) in each
+model (Stouffer et al., 2015). This has impaired attempts to
+identify reasons for differences in model responses. The effective
+radiative forcing or ERF component of the Radiative Forcing MIP (RFMIP)
+includes fixed SST simulations to diagnose the forcing (RFMIP-lite),
+which are further detailed in the corresponding contribution to this special issue. Although not included as part of the DECK, in recognition of this
+deficiency in past phases of CMIP we strongly encourage all CMIP6 modelling
+groups to participate in RFMIP-lite. The modest additional effort would
+enable the radiative forcing to be characterized for both historic and
+future scenarios across the model ensemble. Knowing this forcing would lead
+to a step change in efforts to understand the spread of model responses for
+CMIP6 and contribute greatly to answering one of CMIP6&#x27;s science questions.</p>
+<p>An overview of the main characteristics of the DECK and CMIP6 historical
+simulations appears in Table 2. Here we briefly describe these experiments.
+Detailed specifications for the DECK and CMIP6 historical simulations are
+provided in Appendix A and are summarized in Table A1.</p>
+<h3>The DECK</h3>
+<p>The AMIP and pre-industrial control simulations of the DECK provide
+opportunities for evaluating the atmospheric model and the coupled system,
+and in addition they establish a baseline for performing many of the CMIP6
+experiments. Many experiments branch from, and are compared with, the
+pre-industrial control. Similarly, a number of diagnostic atmospheric
+experiments use AMIP as a control. The idealized CO2-forced experiments
+in the DECK (abrupt-4×CO2 and 1pctCO2),
+despite their simplicity, can reveal fundamental forcing and feedback
+response characteristics of models.</p>
+<p>For nearly 3 decades, AMIP simulations (Gates et al., 1999) have been routinely
+relied on by modelling centres to help in the evaluation of the atmospheric
+component of their models. In AMIP simulations, the SSTs and SICs are
+prescribed based on observations. The idea is to analyse and evaluate the
+atmospheric and land components of the climate system when they are
+constrained by the observed ocean conditions. These simulations can help
+identify which model errors originate in the atmosphere, land, or their
+interactions, and they have proven useful in addressing a great variety of
+questions pertaining to recent climate changes. The AMIP simulations
+performed as part of the DECK cover at least the period from January 1979 to
+December 2014. The end date will continue to evolve as the SSTs and SICs are
+updated with new observations. Besides prescription of ocean conditions in
+these simulations, realistic forcings are imposed that should be identical
+to those applied in the CMIP historical simulations. Large ensembles of AMIP
+simulations are encouraged as they can help to improve the signal-to-noise
+ratio (Li et al., 2015).</p>
+<p>The remaining three experiments in the DECK are premised on the coupling of
+the atmospheric and oceanic circulation. The pre-industrial control
+simulation (piControl or esm-piControl) is performed under conditions chosen to be representative of
+the period prior to the onset of large-scale industrialization, with 1850
+being the reference year. Historically, the industrial revolution began in
+the 18th century, and in nature the climate in 1850 was not stable as
+it was already changing due to prior historical changes in radiative
+forcings. In CMIP6, however, as in earlier CMIP phases, the control
+simulation is an attempt to produce a stable quasi-equilibrium climate state
+under 1850 conditions. When discussing and analysing historical and future
+radiative forcings, it needs to be recognized that the radiative forcing in
+1850 due to anthropogenic greenhouse gas increases alone was already around
+0.25 W m-2 (Cubasch, 2013) although
+aerosols might have offset that to some extent. In addition, there were
+other pre-1850 secular changes, for example, in land use (Hurtt et al.,
+2011), and as a result, global net annual emissions of carbon from land use
+and land-use change already were responsible in 1850 for about 0.6 Pg C yr-1
+(Houghton, 2010). Under the assumptions of the control simulation,
+however, there are no secular changes in forcing, so the concentrations
+and/or sources of atmospheric constituents (e.g. GHGs and emissions of
+short-lived species) as well as land use are held fixed, as are Earth&#x27;s
+orbital characteristics. Because of the absence of both naturally occurring
+changes in forcing (e.g. volcanoes, orbital or solar changes) and
+human-induced changes, the control simulation can be used to study the
+unforced internal variability of the climate system.</p>
+<p>An initial climate spin-up portion of a control simulation, during which
+the climate begins to come into balance with the forcing, is usually
+performed. At the end of the spin-up period, the piControl starts. The
+piControl serves as a baseline for experiments that branch from it. To account for
+the effects of any residual drift, it is required that the piControl simulation
+extends as far beyond the branching point as any experiment to which it will
+be compared. Only then can residual climate drift in an experiment be
+removed so that it is not misinterpreted as part of the model&#x27;s forced
+response. The recommended minimum length for the piControl is 500 years.</p>
+<p>The two DECK climate change experiments branch from some point in the 1850
+control simulation and are designed to document basic aspects of the climate
+system response to greenhouse gas forcing. In the first, the CO2
+concentration is immediately and abruptly quadrupled from the global annual mean 1850 value that is used in piControl. This abrupt-4×CO2 simulation has proven to be useful for characterizing the
+radiative forcing that arises from an increase in atmospheric CO2 as
+well as changes that arise indirectly due to the warming. It can also be
+used to estimate a model&#x27;s equilibrium climate sensitivity (ECS,
+Gregory et al., 2004). In the second, the CO2
+concentration is increased gradually at a rate of 1 % per year. This
+experiment has been performed in all phases of CMIP since CMIP2, and serves
+as a consistent and useful benchmark for analysing model transient climate
+response (TCR). The TCR takes into account the rate of ocean heat uptake
+which governs the pace of all time-evolving climate change (e.g.
+Murphy and Mitchell, 1995). In addition to the TCR, the
+1 % CO2 integration with ESMs that include explicit representation of
+the carbon cycle allows the calculation of the transient climate response to
+cumulative carbon emissions (TCRE), defined as the transient global average
+surface temperature change per unit of accumulated CO2 emissions (IPCC,
+2013). Despite their simplicity, these experiments provide a surprising
+amount of insight into the behaviour of models subject to more complex
+forcing (e.g. Bony et al., 2013; Geoffroy et al., 2013).</p>
+<h3>CMIP historical simulations</h3>
+<p>In addition to the DECK, CMIP requests models to simulate the historical
+period, defined to begin in 1850 and extend to the near present. The CMIP
+historical simulation and its CO2-emission-driven counterpart,
+esm-hist, branch from the piControl and esm-piControl, respectively (see details in Sect. A1.2). These simulations
+are forced, based on observations, by evolving, externally imposed forcings
+such as solar variability, volcanic aerosols, and changes in atmospheric
+composition (GHGs and aerosols) caused by human activities. The CMIP
+historical simulations provide rich opportunities to assess model ability to
+simulate climate, including variability and century timescale trends (e.g. Flato et al., 2013). These
+simulations can also be analysed to determine whether climate model forcing
+and sensitivity are consistent with the observational record, which provides
+opportunities to better bound the magnitude of aerosol forcing (e.g.
+Stevens, 2015). In addition they, along with the control run, provide
+the baseline simulations for performing formal detection and attribution
+studies (e.g. Stott et al., 2006) which help uncover the causes of
+forced climate change.</p>
+<p>As with performing control simulations, models that include representation of
+the carbon cycle should normally perform two different CMIP historical
+simulations: one with prescribed CO2 concentration and the other with
+prescribed CO2 emissions (accounting explicitly for fossil fuel
+combustion). In the second, CO2 concentrations are predicted by the
+model. The treatment of other GHGs should be identical in both simulations.
+Both types of simulation are useful in evaluating how realistically the
+model represents the response of the carbon cycle anthropogenic CO2
+emissions, but the prescribed concentration simulation enables these more
+complex models to be evaluated fairly against those models without
+representation of carbon cycle processes.</p>
+<h3>Common standards, infrastructure, and documentation</h3>
+<p>A key to the success of CMIP and one of the motivations for incorporating a
+wide variety of coordinated modelling activities under a single framework in
+a specific phase of CMIP (now CMIP6) is the desire to reduce duplication of
+effort, minimize operational and computational burdens, and establish common
+practices in producing and analysing large amounts of model output. To
+enable automated processing of output from dozens of different models, CMIP
+has led the way in encouraging adoption of data standards (governing
+structure and metadata) that facilitate development of software
+infrastructure in support of coordinated modelling activities. The ESGF has
+capitalized on this standardization to provide access to CMIP model output
+hosted by institutions around the world. As the complexity of CMIP has
+increased and as the potential use of model output expands beyond the
+research community, the evolution of the climate modelling infrastructure
+requires enhanced coordination. To help in this regard, the WGCM
+Infrastructure Panel (WIP) was set up, and is now providing guidance on
+requirements and establishing specifications for model output, model and
+simulation documentation, and archival and delivery systems for CMIP6 data.
+In parallel to the development of the CMIP6 experiment design, the ESGF
+capabilities are being further extended and improved. In CMIP5, with over 1,000 different model/experiment combinations, a first attempt was also
+made to capture structured metadata describing the models and the
+simulations themselves. Based upon the Common Information Model (CIM,
+Lawrence et al., 2012), tools were
+provided to capture documentation of models and simulations. This effort is
+now continuing under the banner of the international ES-DOC activity, which
+establishes agreements on common Controlled Vocabularies (CVs) to describe models
+and simulations. Modelling groups will be required to provide documentation following
+a common template and adhering to the CVs. With the documentation recorded
+uniformly across models, researchers will, for example, be able to use web-based
+tools to determine differences in model versions and differences in forcing
+and other conditions that affect each simulation. Further details on the CMIP6
+infrastructure can be found in the WIP contribution to this special issue.</p>
+<p>A more routine benchmarking and evaluation of the models is envisaged to be
+a central part of CMIP6. As noted above, one purpose of the DECK and CMIP
+historical simulations is to provide a basis for documenting model
+simulation characteristics. Towards that end an infrastructure is being
+developed to allow analysis packages to be routinely executed whenever new
+model experiments are contributed to the CMIP archive at the ESGF. These
+efforts utilize observations served by the ESGF contributed from the
+obs4MIPs (Ferraro et al., 2015; Teixeira et al., 2014) and ana4MIPs
+projects. Examples of available tools that target routine evaluation in CMIP
+include the PCMDI metrics software (Gleckler et al., 2016)
+and the Earth System Model Evaluation Tool (ESMValTool, Eyring et al., 2016), which brings together established diagnostics such as those used in
+the evaluation chapter of IPCC AR5 (Flato et al., 2013). The ESMValTool
+also integrates other packages, such as the NCAR Climate Variability
+Diagnostics Package (Phillips et al., 2014), or diagnostics
+such as the cloud regime metric (Williams and Webb, 2009) developed
+by the Cloud Feedback MIP (CFMIP) community. These tools can be used to
+broadly and comprehensively characterize the performance of the wide variety
+of models and model versions that will contribute to CMIP6. This evaluation
+activity can, compared with CMIP5, more quickly inform users of model
+output, as well as the modelling centres, of the strengths and weaknesses
+of the simulations, including the extent to which long-standing model errors
+remain evident in newer models. Building such a community-based capability
+is not meant to replace how CMIP research is currently performed but rather
+to complement it. These tools can also be used to compute derived variables
+or indices alongside the ESGF, and their output could be provided back to
+the distributed ESGF archive.</p>
+<h2>CMIP6</h2>
+<h3>Scientific focus of CMIP6</h3>
+<p>In addition to the DECK and CMIP historical simulations, a number of
+additional experiments will colour a specific phase of CMIP, now CMIP6.
+These experiments are likely to change from one CMIP phase to the next. To
+maximize the relevance and impact of CMIP6, it was decided to use the WCRP Grand
+Science Challenges (GCs) as the scientific backdrop of the CMIP6
+experimental design. By promoting research on critical science questions for
+which specific gaps in knowledge have hindered progress so far, but for
+which new opportunities and more focused efforts raise the possibility of
+significant progress on the timescale of 5–10 years, these GCs constitute a
+main component of the WCRP strategy to accelerate progress in climate
+science (Brasseur and Carlson, 2015). They relate to
+(1) advancing understanding of the role of clouds in the general atmospheric
+circulation and climate sensitivity (Bony et al., 2015),
+(2) assessing the response of the cryosphere to a warming climate and its
+global consequences, (3) understanding the factors that control water
+availability over land (Trenberth and Asrar, 2014), (4) assessing
+climate extremes, what controls them, how they have changed in the past and
+how they might change in the future, (5) understanding and predicting regional sea level change and its
+coastal impacts, (6) improving near-term climate predictions, and (7) determining how biogeochemical cycles and feedback control greenhouse gas
+concentrations and climate change.
+
+These GCs will be using the full spectrum of observational, modelling and
+analytical expertise across the WCRP, and in terms of modelling most GCs
+will address their specific science questions through a hierarchy of
+numerical models of different complexities. Global coupled models obviously
+constitute an essential element of this hierarchy, and CMIP6 experiments
+will play a prominent role across all GCs by helping to answer the following
+three CMIP6 science questions: How does the Earth system respond to forcing?
+What are the origins and consequences of systematic model biases? How can we
+assess future climate change given internal climate variability, climate
+predictability, and uncertainties in scenarios?</p>
+<p>These three questions will be at the centre of CMIP6. Science topics related specifically to CMIP6 will be addressed
+through a range of CMIP6-Endorsed MIPs that are organized by the respective
+communities and overseen by the CMIP Panel (Fig. 2). Through these different
+MIPs and their connection to the GCs, the goal is to fill some of the main
+scientific gaps of previous CMIP phases. This includes, in particular,
+facilitating the identification and interpretation of model systematic
+errors, improving the estimate of radiative forcings in past and future
+climate change simulations, facilitating the identification of robust
+climate responses to aerosol forcing during the historical period, better
+accounting of the impact of short-term forcing agents and land use on
+climate, better understanding the mechanisms of decadal climate variability,
+along with many other issues not addressed satisfactorily in CMIP5
+(Stouffer et al., 2015). In endorsing a number of these MIPs,
+the CMIP Panel acted to minimize overlaps among the MIPs and to reduce the
+burden on modelling groups, while maximizing the scientific complementarity
+and synergy among the different MIPs.</p>
+<h3>The CMIP6-Endorsed MIPs</h3>
+<p>Close to 30 suggestions for CMIP6 MIPs have been received so far, of which 21 MIPs were
+eventually endorsed and invited to participate (Table 3). Of those
+not selected some were asked to work with other proposed MIPs with
+overlapping science goals and objectives. Of the 21 CMIP6-Endorsed MIPs,
+4 are diagnostic in nature, which means that they define and analyse
+additional output, but do not require additional experiments. In the
+remaining 17 MIPs, a total of around 190 experiments have been proposed
+resulting in 40 000 model simulation years with around half of these in Tier 1.
+The CMIP6-Endorsed MIPs show broad coverage and distribution across the
+three CMIP6 science questions, and all are linked to the WCRP Grand Science
+Challenges (Fig. 3).</p>
+<p>Each of the 21 CMIP6-Endorsed MIPs is described in a separate invited
+contribution to this special issue. These contributions will detail the goal
+of the MIP and the major scientific gaps the MIP is addressing, and will
+specify what is new compared to CMIP5 and previous CMIP phases. The
+contributions will include a description of the experimental design and
+scientific justification of each of the experiments for Tier 1 (and possibly
+beyond), and will link the experiments and analysis to the DECK and CMIP6
+historical simulations. They will additionally include an analysis plan to
+fully justify the resources used to produce the various requested variables,
+and if the analysis plan is to compare model results to observations, the
+contribution will highlight possible model diagnostics and performance
+metrics specifying whether the comparison entails any particular requirement
+for the simulations or outputs (e.g. the use of observational simulators).
+In addition, possible observations and reanalysis products for model
+evaluation are discussed and the MIPs are encouraged to help facilitate
+their use by contributing them to the obs4MIPs/ana4MIPs archives at the ESGF
+(see Sect. 3.3). In some MIPs, additional forcings beyond those used in the
+DECK and CMIP6 historical simulations are required, and these are described
+in the respective contribution as well.
+
+A number of MIPs are developments and/or continuation of long-standing
+science themes. These include MIPs specifically addressing science questions
+related to cloud feedback and the understanding of spatial patterns of
+circulation and precipitation (CFMIP), carbon cycle feedback, and the
+understanding of changes in carbon fluxes and stores (C4MIP), detection
+and attribution (DAMIP) that newly includes 21st-century GHG-only
+simulations allowing the projected responses to GHGs and other forcings to
+be separated and scaled to derive observationally constrained projections,
+and paleoclimate (PMIP), which assesses the credibility of the model
+response to forcing outside the range of recent variability. These MIPs
+reflect the importance of key forcing and feedback processes in
+understanding past, present, and future climate change and have developed new
+experiments and science plans focused on emerging new directions that will
+be at the centre of the WCRP Grand Science Challenges. A few new MIPs have
+arisen directly from gaps in understanding in CMIP5 (Stouffer
+et al., 2015), for example, poor quantification of radiative forcing (RFMIP),
+better understanding of ocean heat uptake and sea level rise (FAFMIP), and
+understanding of model response to volcanic forcing (VolMIP).</p>
+<p>Since CMIP5, other MIPs have emerged as the modelling community has
+developed more complex ESMs with interactive components beyond the carbon
+cycle. These include the consistent quantification of forcings and feedback
+from aerosols and atmospheric chemistry (AerChemMIP), and, for the first
+time in CMIP, modelling of sea level rise from land ice sheets (ISMIP6).</p>
+<p>Some MIPs specifically target systematic biases focusing on improved
+understanding of the sea ice state and its atmospheric and oceanic forcing
+(SIMIP), the physical and biogeochemical aspects of the ocean (OMIP), land,
+snow and soil moisture processes (LS3MIP), and improved understanding of
+circulation and variability with a focus on stratosphere–troposphere
+coupling (DynVarMIP). With the increased emphasis in the climate science
+community on the need to represent and understand changes in regional
+circulation, systematic biases are also addressed on a more regional scale
+by the Global Monsoon MIP (GMMIP) and a first coordinated activity on high-resolution modelling (HighResMIP).</p>
+<p>For the first time, future scenario experiments, previously coordinated
+centrally as part of the CMIP5 core experiments, will be run as an MIP
+ensuring clear definition and well-coordinated science questions.
+ScenarioMIP will run a new set of future long-term (century timescale)
+integrations engaging input from both the climate science and integrated
+assessment modelling communities. The new scenarios are based on a matrix
+that uses the shared socioeconomic pathways (SSPs, O&#x27;Neill
+et al., 2015) and forcing levels of the Representative Concentration
+Pathways (RCP) as axes. As a set, they span the same range as the CMIP5 RCPs
+(Moss et al., 2010), but fill critical gaps for intermediate forcing
+levels and questions, for example, on short-lived species and land use. The
+near-term experiments (10–30 years) are coordinated by the decadal climate
+prediction project (DCPP) with improvements expected, for example, from the
+initialization of additional components beyond the ocean and from a more
+detailed process understanding and evaluation of the predictions to better
+identify sources and limits of predictability.</p>
+<p>Other MIPs include specific future mitigation options, e.g. the land use MIP
+(LUMIP) that is for the first time in CMIP isolating regional land
+management strategies to study how different surface types respond to
+climate change and direct anthropogenic modifications, or the geoengineering
+MIP (GeoMIP), which examines climate impacts of newly proposed radiation
+modification geoengineering strategies.</p>
+<p>The diagnostic MIP CORDEX will oversee the downscaling of CMIP6 models for
+regional climate projections. Another historic development in our field that
+provides, for the first time in CMIP, an avenue for a more formal
+communication between the climate modelling and user community is the
+endorsement of the vulnerability, impacts, and adaptation and climate
+services advisory board (VIACS AB). This diagnostic MIP requests certain key
+variables of interest to the VIACS community be delivered in a timely manner
+to be used by climate services and in impact studies.</p>
+<p>All MIPs define output streams in the centrally coordinated CMIP6 data
+request for each of their own experiments as well as the DECK and CMIP6
+historical simulations (see the CMIP6 data request contribution to this
+special issue for details). This will ensure that the required variables are
+stored at the frequency and resolution required to address the specific
+science questions and evaluation needs of each MIP and to enable a broad
+characterization of the performance of the CMIP6 models.</p>
+<p>We note that only the Tier 1 MIP experiments are overseen by the CMIP Panel,
+but additional experiments are proposed by the MIPs in Tiers 2 and 3. We
+encourage the modelling groups to participate in the full suite of
+experiments beyond Tier 1 to address in more depth the scientific questions
+posed.</p>
+<p>The call for MIP applications for CMIP6 is still open and new proposals will
+be reviewed at the annual WGCM meetings. However, we point out that the
+additional MIPs suggested after the CMIP6 data request has been finalized
+will have to work with the already defined model output from the DECK and
+CMIP6 historical simulations, or work with the modelling group to recover
+additional variables from their internal archives. We also point out that
+some experiments proposed by CMIP6-Endorsed MIPs may not be finished until
+after CMIP6 ends.</p>
+<h2>Summary</h2>
+<p>CMIP6 continues the pattern of evolution and adaptation characteristic of
+previous phases of CMIP. To centre CMIP at the heart of activities within
+climate science and encourage links among activities within the World
+Climate Research Programme (WCRP), CMIP6 has been formulated scientifically
+around three specific questions, amidst the backdrop of the WCRP&#x27;s seven
+Grand Science Challenges. To meet the increasingly broad scientific demands
+of the climate-science community, yet be responsive to the individual
+priorities and resource limitations of the modelling centres, CMIP has
+adopted a new, more federated organizational structure.</p>
+<p>CMIP has now evolved from a centralized activity involving a large number of
+experiments to a federated activity, encompassing many individually designed
+MIPs. CMIP6 comprises 21 individual CMIP6-Endorsed MIPs and the DECK and
+CMIP6 historical simulations. Four of the 21 CMIP6-Endorsed MIPs are
+diagnostic in nature, meaning that they require additional output from
+models, but not additional simulations. The total amount of output from
+CMIP6 is estimated to be between 20 and 40 petabytes, depending on model
+resolution and the number of modelling centres ultimately participating in
+CMIP6. Questions addressed in the MIPs are wide ranging, from the climate of
+distant past to the response of turbulent cloud processes to radiative
+forcing, from how the terrestrial biosphere influences the uptake of
+CO2 to how much predictability is stored in the ocean, from how to best
+project near-term to long-term future climate changes while considering
+interdependence and differences in model performance in the CMIP6 ensemble,
+and from what regulates the distribution of tropospheric ozone, to the
+influence of land-use changes on water availability.</p>
+<p>The last 3 years have been dedicated to conceiving and then planning what
+we now call CMIP6. Starting in 2016, the first modelling centres are
+expected to begin performing the DECK and uploading output on the ESGF. Forcings
+for the DECK and CMIP6 historical simulations will be ready before mid-2016 so that
+these experiements can be started, and by the end of 2016 the diverse
+forcings for different scenarios of future human activity will become available.
+Past experience suggests that most centres will complete their CMIP simulations within a few years
+while the analysis of CMIP6 results will likely go on for a decade or more
+(Fig. 4).</p>
+<p>Through an intensified effort to align CMIP with specific scientific
+questions and the WCRP Grand Science Challenges, we expect CMIP6 to continue
+CMIP&#x27;s tradition of major scientific advances. CMIP6 simulations and
+scientific achievements are expected to support the IPCC Sixth Assessment
+Report (AR6) as well as other national and international climate assessments
+or special reports. Ultimately scientific progress on the most pressing
+problems of climate variability and change will be the best measure of the
+success of CMIP6.</p>
+<h3>Data availability</h3>
+<p>The model output from the DECK and CMIP6 historical simulations described in
+this paper will be distributed through the Earth System Grid Federation
+(ESGF) with digital object identifiers (DOIs) assigned. As in CMIP5, the
+model output will be freely accessible through data portals after
+registration. In order to document CMIP6&#x27;s scientific impact and enable
+ongoing support of CMIP, users are obligated to acknowledge CMIP6, the
+participating modelling groups, and the ESGF centres (see details on the CMIP
+Panel website at
+http://www.wcrp-climate.org/index.php/wgcm-cmip/about-cmip). Further
+information about the infrastructure supporting CMIP6, the metadata
+describing the model output, and the terms governing its use are provided by
+the WGCM Infrastructure Panel (WIP) in their invited contribution to this
+special issue. Along with the data, the provenance of the data will be
+recorded, and DOIs will be assigned to collections of output so that they can
+be appropriately cited. This information will be made readily available so
+that published research results can be verified and credit can be given to
+the modelling groups providing the data. The WIP is coordinating and
+encouraging the development of the infrastructure needed to archive and
+deliver this information. In order to run the experiments, data sets for
+natural and anthropogenic forcings are required. These forcing data sets are
+described in separate invited contributions to this special issue. The
+forcing data sets will be made available through the ESGF with version
+control and DOIs assigned.</p>
+</body></html>
