@@ -23,32 +23,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Montserrat",
+        body: "Inter",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#FAF3DB",       // color-primary-cream — page background
+          lightgray: "#DDE390",   // color-primary-yellow-green — borders, dividers
+          gray: "#397F94",        // color-primary-teal — secondary text, metadata
+          darkgray: "#1E3C42",    // color-primary-dark-teal — body text
+          dark: "#1E3C42",        // color-primary-dark-teal — headings
+          secondary: "#397F94",   // color-primary-teal — links
+          tertiary: "#F38C48",    // color-primary-orange — hover, active links
+          highlight: "rgba(221, 227, 144, 0.25)", // yellow-green tint
+          textHighlight: "#FAC46188",             // color-primary-yellow
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#1E3C42",       // color-primary-dark-teal — page background
+          lightgray: "#2d555d",   // slightly lighter teal — borders
+          gray: "#397F94",        // color-primary-teal — secondary text
+          darkgray: "#FAF3DB",    // color-primary-cream — body text
+          dark: "#FAF3DB",        // color-primary-cream — headings
+          secondary: "#55C7D2",   // color-comp-2 — links
+          tertiary: "#F38C48",    // color-primary-orange — hover, active
+          highlight: "rgba(57, 127, 148, 0.25)",  // teal tint
+          textHighlight: "#FAC46155",             // color-primary-yellow
         },
       },
     },
