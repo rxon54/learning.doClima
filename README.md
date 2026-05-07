@@ -1,17 +1,19 @@
-# Quartz v4
+# learning.doClima
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Knowledge graph for climate risk, GIS, and data science — built for the [doClima](https://github.com/rxon54) ecosystem.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Covers Brazilian municipal climate data sources (AdaptaBrasil, SEEG, MapBiomas, CHIRPS, ANA HidroWeb), remote sensing, climate modeling (CMIP6/CORDEX), hydrology, and time-series analysis.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Built with [Quartz](https://quartz.jzhao.xyz/) and published via GitHub Pages.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## Structure
 
-## Sponsors
+- `topics/` — 15 study topics across 4 tiers (foundations → advanced)
+- `concepts/` — atomic knowledge graph nodes (29 concepts)
+- `resources/` — local PDFs and reference documents
+- `glossary.md` — PT-BR ↔ EN terminology
+- `schedule.md` — 8-week study plan
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+## Live site
+
+https://rxon54.github.io/learning.doClima/
