@@ -1,33 +1,33 @@
-# doClima Learning — Map of Content
+---
+title: Welcome
+---
 
-> Your single entry point. Navigate by tier, track progress, jump to any concept.
-> Source archive: [[learning_roadmap_climate_gis]]
+# learning.doClima
+*An internal knowledge base for the doClima team*
 
 ---
 
-## Status
+This site is our shared study space.
 
-| Tier | Topics | Status |
-|------|--------|--------|
-| 1 — Core Knowledge (Weeks 1-4) | [[1.1-ipcc-framework]] · [[1.2-brazil-policy-stack]] · [[1.3-gis-fundamentals]] · [[1.4-climate-variables]] | ⬜ Not started |
-| 2 — Product-Critical (Weeks 5-8) | [[2.1-data-sources]] · [[2.2-seeg-mapbiomas-adaptabrasil]] · [[2.3-vulnerability-adaptive-capacity]] · [[2.4-disaster-risk-brazil]] | ⬜ Not started |
-| 3 — Strategic Depth (Months 3-4) | [[3.1-municipal-governance]] · [[3.2-remote-sensing]] · [[3.3-climate-modeling]] · [[3.4-environmental-economics]] | ⬜ Not started |
-| 4 — Specialized / As Needed | [[4.1-hydrology]] · [[4.2-urban-climate]] · [[4.3-time-series-analysis]] | ⬜ Not started |
+As we build doClima — a platform to make climate risk data accessible to every Brazilian municipality — we realized we needed to deeply understand the data sources, models, and methods behind it. This is where we document that learning.
+
+**What you'll find here**
+
+- Study notes on climate science, GIS, remote sensing, hydrology, and data analysis
+- Summaries and references to public technical documents (IPCC, SEEG, MapBiomas, ANA, INPE and others)
+- A knowledge graph connecting concepts across topics — follow the links, explore the connections
+- A structured 8-week learning roadmap built around the actual work of doClima
+
+**Who this is for**
+
+This is an internal resource for the doClima team. It was built for us to learn together, at our own pace, across time zones. If you're reading this and you're not one of us — welcome, but manage expectations accordingly.
+
+**Disclaimer**
+
+All documents referenced here are publicly available materials produced by their respective authors and institutions. We don't claim authorship over any of the source material. Notes and summaries reflect our own understanding and interpretation — they may contain errors, simplifications, or gaps. This is a living document, not a finished product.
+
+If something is wrong or missing, that's a feature request, not a scandal.
 
 ---
 
-## Weekly Schedule
-
-→ [[schedule]]
-
----
-
-## Concept Index
-
-[[chirps]] · [[chirts]] · [[cmip6]] · [[cobrade]] · [[cordex]] · [[dec-ecp]] · [[downscaling]] · [[ensemble]] · [[era5]] · [[gcm]] · [[idf-curves]] · [[ipcc-risk-triad]] · [[landsat]] · [[lulucf]] · [[mapbiomas]] · [[modis]] · [[ndvi]] · [[pnacc]] · [[reanalysis]] · [[return-period]] · [[seeg]] · [[sentinel2]] · [[sirgas2000]] · [[spi]] · [[ssp-rcp]] · [[tcfd]] · [[uhi]] · [[wbgt]] · [[zonal-statistics]]
-
----
-
-## Reference
-
-→ [[glossary]] — PT-BR ↔ EN quick lookup
+**Start here →** [[00-index|Learning roadmap & index]]
