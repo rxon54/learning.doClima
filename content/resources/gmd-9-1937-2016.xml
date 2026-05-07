@@ -1,0 +1,2172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing with OASIS Tables v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" dtd-version="3.0"><?xmltex \makeatother\@nolinetrue\makeatletter?>
+  <front>
+    <journal-meta>
+<journal-id journal-id-type="publisher">GMD</journal-id>
+<journal-title-group>
+<journal-title>Geoscientific Model Development</journal-title>
+<abbrev-journal-title abbrev-type="publisher">GMD</abbrev-journal-title>
+<abbrev-journal-title abbrev-type="nlm-ta">Geosci. Model Dev.</abbrev-journal-title>
+</journal-title-group>
+<issn pub-type="epub">1991-9603</issn>
+<publisher><publisher-name>Copernicus Publications</publisher-name>
+<publisher-loc>Göttingen, Germany</publisher-loc>
+</publisher>
+</journal-meta>
+
+    <article-meta>
+      <article-id pub-id-type="doi">10.5194/gmd-9-1937-2016</article-id><title-group><article-title>Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6)
+experimental design and organization</article-title>
+      </title-group><?xmltex \runningtitle{Overview of the CMIP6 experimental design and organization}?><?xmltex \runningauthor{V.~Eyring et al.}?>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" rid="aff1">
+          <name><surname>Eyring</surname><given-names>Veronika</given-names></name>
+          <email>veronika.eyring@dlr.de</email>
+        <ext-link>https://orcid.org/0000-0002-6887-4885</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff2">
+          <name><surname>Bony</surname><given-names>Sandrine</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff3">
+          <name><surname>Meehl</surname><given-names>Gerald A.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff4">
+          <name><surname>Senior</surname><given-names>Catherine A.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff5">
+          <name><surname>Stevens</surname><given-names>Bjorn</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0003-3795-0475</ext-link></contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff6">
+          <name><surname>Stouffer</surname><given-names>Ronald J.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff7">
+          <name><surname>Taylor</surname><given-names>Karl E.</given-names></name>
+          
+        <ext-link>https://orcid.org/0000-0002-6491-2135</ext-link></contrib>
+        <aff id="aff1"><label>1</label><institution>Deutsches Zentrum für Luft- und Raumfahrt (DLR), Institut für Physik der Atmosphäre, Oberpfaffenhofen, Germany</institution>
+        </aff>
+        <aff id="aff2"><label>2</label><institution>Laboratoire de Météorologie Dynamique, Institut Pierre Simon Laplace (LMD/IPSL), CNRS,<?xmltex \hack{\newline}?> Université Pierre et Marie Curie, Paris, France</institution>
+        </aff>
+        <aff id="aff3"><label>3</label><institution>National Center for Atmospheric Research (NCAR), Boulder, CO, USA</institution>
+        </aff>
+        <aff id="aff4"><label>4</label><institution>Met Office Hadley Centre, Exeter, UK</institution>
+        </aff>
+        <aff id="aff5"><label>5</label><institution>Max-Planck-Institute for Meteorology, Hamburg, Germany</institution>
+        </aff>
+        <aff id="aff6"><label>6</label><institution>Geophysical Fluid Dynamics Laboratory/NOAA, Princeton, NJ, USA</institution>
+        </aff>
+        <aff id="aff7"><label>7</label><institution>Program for Climate Model Diagnosis and Intercomparison (PCMDI),<?xmltex \hack{\newline}?> Lawrence Livermore National Laboratory, Livermore, CA, USA</institution>
+        </aff>
+      </contrib-group>
+      <author-notes><corresp id="corr1">Veronika Eyring (veronika.eyring@dlr.de)</corresp></author-notes><pub-date><day>26</day><month>May</month><year>2016</year></pub-date>
+      
+      <volume>9</volume>
+      <issue>5</issue>
+      <fpage>1937</fpage><lpage>1958</lpage>
+      <history>
+        <date date-type="received"><day>3</day><month>December</month><year>2015</year></date>
+           <date date-type="rev-request"><day>14</day><month>December</month><year>2015</year></date>
+           <date date-type="rev-recd"><day>15</day><month>April</month><year>2016</year></date>
+           <date date-type="accepted"><day>27</day><month>April</month><year>2016</year></date>
+      </history>
+      <permissions>
+<license license-type="open-access">
+<license-p>This work is licensed under a Creative Commons Attribution 3.0 Unported License. To view a copy of this license, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</ext-link></license-p>
+</license>
+</permissions><self-uri xlink:href="https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.html">This article is available from https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.html</self-uri>
+<self-uri xlink:href="https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf">The full text article is available as a PDF file from https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf</self-uri>
+
+
+      <abstract>
+    <p>By coordinating the design and distribution of global
+climate model simulations of the past, current,  and future climate, the
+Coupled Model Intercomparison Project (CMIP) has become one of the
+foundational elements of climate science. However, the need to address an
+ever-expanding range of scientific questions arising from more and more
+research communities has made it necessary to revise the organization of
+CMIP. After a long and wide community consultation, a new and more federated
+structure has been put in place. It consists of three major elements: (1) a
+handful of common experiments, the DECK (Diagnostic, Evaluation and
+Characterization of Klima) and CMIP historical simulations (1850–near present) that will maintain continuity and help document basic
+characteristics of models across different phases of CMIP; (2) common
+standards, coordination, infrastructure, and documentation that will
+facilitate the distribution of model outputs and the characterization of the
+model ensemble; and (3) an ensemble of CMIP-Endorsed Model Intercomparison
+Projects (MIPs) that will be specific to a particular phase of CMIP (now
+CMIP6) and that will build on the DECK and CMIP historical simulations to
+address a large range of specific questions and fill the scientific gaps of
+the previous CMIP phases. The DECK and CMIP historical simulations, together
+with the use of CMIP data standards, will be the entry cards for models
+participating in CMIP. Participation in CMIP6-Endorsed MIPs by individual
+modelling groups will be at their own discretion and will depend on their
+scientific interests and priorities. With the Grand Science Challenges of
+the World Climate Research Programme (WCRP) as its scientific backdrop,
+CMIP6 will address three broad questions:
+<list list-type="bullet"><list-item>
+      <p>How does the Earth system
+respond to forcing?</p></list-item><list-item>
+      <p>What are the origins and consequences of
+systematic model biases?</p></list-item><list-item>
+      <p>How can we assess future climate changes
+given internal climate variability, predictability, and uncertainties in
+scenarios?</p></list-item></list>
+This CMIP6 overview paper presents the background and rationale
+for the new structure of CMIP, provides a detailed description of the DECK
+and CMIP6 historical simulations, and includes a brief introduction to the
+21 CMIP6-Endorsed MIPs.</p>
+  </abstract>
+    </article-meta>
+  </front>
+<body>
+      
+
+      <?xmltex \hack{\newpage}?>
+<sec id="Ch1.S1" sec-type="intro">
+  <title>Introduction</title>
+      <p>The Coupled Model Intercomparison Project (CMIP) organized under the
+auspices of the World Climate Research Programme's (WCRP) Working Group on
+Coupled Modelling (WGCM) started 20 years ago as a comparison of a
+handful of early global coupled climate models performing experiments using
+atmosphere models coupled to a dynamic ocean, a simple land surface, and
+thermodynamic sea ice (Meehl et al., 1997). It has since evolved
+over five phases into a major international multi-model research activity
+(Meehl et al., 2000, 2007; Taylor et al., 2012) that has
+not only introduced a new era to climate science research but has also
+become a central element of national and international assessments of
+climate change (e.g. IPCC, 2013). An important part of
+CMIP is to make the multi-model output publicly available in a
+standardized format for analysis by the wider climate community and users.
+The standardization of the model output in a specified format, and the
+collection, archival, and access of the model output through the Earth
+System Grid Federation (ESGF) data replication centres have facilitated
+multi-model analyses.</p>
+      <p>The objective of CMIP is to better understand past, present, and future
+climate change arising from natural, unforced variability or in response to
+changes in radiative forcings in a multi-model context. Its increasing
+importance and scope is a tremendous success story, but this very success
+poses challenges for all involved. Coordination of the project has become
+more complex as CMIP includes more models with more processes all applied to
+a wider range of questions. To meet this new interest and to address a wide
+variety of science questions from more and more scientific research
+communities, reflecting the expanding scope of comprehensive modelling in
+climate science, has put pressure on CMIP to become larger and more
+extensive. Consequently, there has been an explosion in the diversity and
+volume of requested CMIP output from an increasing number of experiments
+causing challenges for CMIP's technical infrastructure (Williams
+et al., 2015). Cultural and organizational challenges also arise from the
+tension between expectations that modelling centres deliver multiple model
+experiments to CMIP yet at the same time advance basic research in climate
+science.</p>
+      <p>In response to these challenges, we have adopted a more federated structure
+for the sixth phase of CMIP (i.e. CMIP6) and subsequent phases. Whereas
+past phases of CMIP were usually described through a single overview paper,
+reflecting a centralized and relatively compact CMIP structure, this GMD
+special issue describes the new design and organization of CMIP, the suite
+of experiments, and its forcings, in a series of invited contributions. In
+this paper, we provide the overview and backdrop of the new CMIP structure
+as well as the main scientific foci that CMIP6 will address. We begin by
+describing the new organizational form for CMIP and the pressures that it
+was designed to alleviate (Sect. 2). It also contains a description of a
+small set of simulations for CMIP which are intended to be common to all
+participating models (Sect. 3), details of which are provided in the
+Appendix. We then present a brief overview of CMIP6 that serves as an
+introduction to the other contributions to this special issue (Sect. 4),
+and we close with a summary.</p>
+</sec>
+<sec id="Ch1.S2">
+  <title>CMIP design – a more continuous and distributed organization</title>
+      <p>In preparing for CMIP6, the CMIP Panel (the authors of this paper), which
+traditionally has the responsibility for direct coordination and oversight
+of CMIP, initiated a 2-year process of community consultation. This
+consultation involved the modelling centres whose contributions form the
+substance of CMIP as well as communities that rely on CMIP model output for
+their work. Special meetings were organized to reflect on the successes of
+CMIP5 as well as the scientific gaps that remain or have since emerged. The
+consultation also sought input through a community survey, the scientific
+results of which are described by Stouffer et al. (2015). Four
+main issues related to the overall structure of CMIP were identified.</p>
+      <p>First, we identified a growing appreciation of the scientific potential to
+use results across different CMIP phases. Such approaches, however, require an
+appropriate experimental design to facilitate the identification of an
+ensemble of models with particular properties drawn from different phases of
+CMIP (e.g. Rauser et al., 2014). At the same time, it was
+recognized that an increasing number of Model Intercomparison Projects
+(MIPs) were being organized independent of CMIP, the data structure and
+output requirements were often inconsistent, and the relationship between
+the models used in the various MIPs was often difficult to determine, in
+which context measures to help establish continuity across MIPs or phases of
+CMIP would also be welcome.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F1" specific-use="star"><caption><p>CMIP evolution. CMIP will evolve but the DECK will provide
+continuity across phases.</p></caption>
+        <?xmltex \igopts{width=455.244094pt}?><graphic xlink:href="https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016-f01.png"/>
+
+      </fig>
+
+      <p>Second, the scope of CMIP was taxing the resources of modelling centres
+making it impossible for many to consider contributing to all the proposed
+experiments. By providing a better basis to help modelling centres decide
+exactly which subset of experiments to perform, it was thought that it might
+be possible to minimize fragmented participation in CMIP6. A more federated
+experimental protocol could also encourage modelling centres to develop
+intercomparison studies based on their own strategic goals.</p>
+      <p>Third, some centres expressed the view that the punctuated structure of CMIP
+had begun to distort the model development process. Defining a protocol that
+allowed modelling centres to decouple their model development from the CMIP
+schedule would offer additional flexibility, and perhaps encourage modelling
+centres to finalize their models and submit some of their results sooner on
+their own schedule.</p>
+      <p>Fourth and finally, many groups expressed a desire for particular phases of
+CMIP to be more than just a collection of MIPs, but rather to reflect the
+strategic goals of the climate science community as, for instance,
+articulated by WCRP. By focusing a particular phase of CMIP around specific
+scientific issues, it was felt that the modelling resources could be more
+effectively applied to those scientific questions that had matured to a
+point where coordinated activities were expected to have substantial impact.</p>
+      <p>A variety of mechanisms were proposed and intensely debated to address these
+issues. The outcome of these discussions is embodied in the new CMIP
+structure, which has three major components. First, the identification of a
+handful of common experiments, the Diagnostic, Evaluation and
+Characterization of Klima (DECK) experiments (<italic>klima</italic> is Greek for
+“climate”), and CMIP historical simulations, which can be used to establish
+model characteristics and serves as its entry card for participating in
+one of CMIP's phases or in other MIPs organized between CMIP phases, as
+depicted in Fig. 1. Second, common standards, coordination, infrastructure,
+and documentation that facilitate the distribution of model outputs and the
+characterization of the model ensemble, and third, the adoption of a more
+federated structure, building on more autonomous CMIP-Endorsed MIPs.</p>
+
+<?xmltex \floatpos{t}?><table-wrap id="Ch1.T1" specific-use="star"><caption><p>Main criteria for MIP endorsement as agreed with representatives
+from the modelling groups and MIPs at the WGCM 18th Session in Grainau,
+Germany in October 2014.</p></caption><oasis:table frame="topbot"><oasis:tgroup cols="2">
+     <oasis:colspec colnum="1" colname="col1" align="left"/>
+     <oasis:colspec colnum="2" colname="col2" align="justify" colwidth="398.338583pt"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">No.</oasis:entry>  
+         <oasis:entry colname="col2">MIP endorsement criterion</oasis:entry>
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row>  
+         <oasis:entry colname="col1">1</oasis:entry>  
+         <oasis:entry colname="col2">The MIP and its experiments address at least one of the key science questions of CMIP6.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">2</oasis:entry>  
+         <oasis:entry colname="col2">The MIP demonstrates connectivity to the DECK experiments and the CMIP6 historical simulations.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">3</oasis:entry>  
+         <oasis:entry colname="col2">The MIP adopts the CMIP modelling infrastructure standards and conventions.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">4</oasis:entry>  
+         <oasis:entry colname="col2">All experiments are tiered, well defined, and useful in a multi-model context and do not overlap with other <?xmltex \hack{\hfill\break}?>CMIP6 experiments.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">5</oasis:entry>  
+         <oasis:entry colname="col2">Unless a Tier 1 experiment differs only slightly from another well-established experiment, it must already have <?xmltex \hack{\hfill\break}?>been performed by more than one modelling group.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">6</oasis:entry>  
+         <oasis:entry colname="col2">A sufficient number of modelling centres (<inline-formula><mml:math display="inline"><mml:mo>∼</mml:mo></mml:math></inline-formula> 8) are committed to performing all of the MIP's Tier 1 experiments <?xmltex \hack{\hfill\break}?>and providing all the requested diagnostics needed to answer at least one of its science questions.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">7</oasis:entry>  
+         <oasis:entry colname="col2">The MIP presents an analysis plan describing how it will use all proposed experiments, any relevant observations, and specially requested model output to evaluate the models and address its science questions.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">8</oasis:entry>  
+         <oasis:entry colname="col2">The MIP has completed the MIP template questionnaire.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">9</oasis:entry>  
+         <oasis:entry colname="col2">The MIP contributes a paper on its experimental design to the GMD CMIP6 special issue.</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">10</oasis:entry>  
+         <oasis:entry colname="col2">The MIP considers reporting on the results by co-authoring a paper with the modelling groups.</oasis:entry>
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup></oasis:table></table-wrap>
+
+      <p>Realizing the idea of a particular phase of CMIP being centred on a
+collection of more autonomous MIPs required the development of procedures
+for soliciting and evaluating MIPs in light of the scientific focus chosen
+for CMIP6. These procedures were developed and implemented by the CMIP
+Panel. The responses to the CMIP5 survey helped inform a series of workshops
+and resulted in a draft experiment design for CMIP6. This initial design for
+CMIP6 was published in early 2014 (Meehl et al., 2014) and
+was open for comments from the wider community until mid-September 2014. In
+parallel to the open review of the design, the CMIP Panel distributed an
+open call for proposals for MIPs in April 2014. These proposals were broadly
+reviewed within WCRP with the goal to encourage and enhance synergies among
+the different MIPs, to avoid overlapping experiments, to fill gaps, and to
+help ensure that the WCRP Grand Science Challenges would be addressed.
+Revised MIP proposals were requested and evaluated by the CMIP Panel in
+summer 2015. The selection of MIPs was based on the CMIP Panel's evaluation
+of ten endorsement criteria (Table 1). To ensure community engagement, an
+important criterion was that enough modelling groups (at least eight) were
+willing to perform all of the MIP's highest priority (Tier 1) experiments
+and providing all the requested diagnostics needed to answer at least one of
+its leading science questions. For each of the selected CMIP6-Endorsed MIPs
+it turned out that at least ten modelling groups indicated their intent to
+participate in Tier 1 experiments at least, thus attesting to the wide
+appeal and level of science interest from the climate modelling community.</p>
+</sec>
+<sec id="Ch1.S3">
+  <title>The DECK and CMIP historical simulations</title>
+      <p>The DECK comprises four baseline experiments: (a) a historical Atmospheric
+Model Intercomparison Project (<italic>amip</italic>) simulation, (b) a pre-industrial control
+simulation (<italic>piControl</italic> or <italic>esm-piControl</italic>), (c) a simulation forced by an abrupt quadrupling of
+CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> (<italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2)</italic> and (d) a simulation forced by a 1 % yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula> CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+increase (<italic>1pctCO2</italic>). CMIP also includes a historical simulation (<italic>historical</italic> or <italic>esm-hist</italic>) that spans
+the period of extensive instrumental temperature measurements from 1850 to
+the present. In naming the experiments, we distinguish between simulations
+with CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentrations calculated and anthropogenic sources of
+CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> prescribed (<italic>esm-piControl</italic> and <italic>esm-hist</italic>) and simulations with prescribed CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+concentrations (all others). Hereafter, models that can calculate
+atmospheric CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration and account for the fluxes of CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+between the atmosphere, the ocean, and biosphere are referred to as Earth
+System Models (ESMs).</p>
+      <p>The DECK experiments are chosen (1) to provide continuity across past and
+future phases of CMIP, (2) to evolve as little as possible over time, (3) to
+be well established, and incorporate simulations that modelling centres
+perform anyway as part of their own development cycle, and (4) to be
+relatively independent of the forcings and scientific objectives of a
+specific phase of CMIP. The four DECK experiments and the CMIP historical
+simulations are well suited for quantifying and understanding important
+climate change response characteristics. Modelling groups also commonly
+perform simulations of the historical period, but reconstructions of the
+external conditions imposed on historical runs (e.g. land-use changes)
+continue to evolve significantly, influencing the simulated climate. In
+order to distinguish among the historical simulations performed under
+different phases of CMIP, the historical simulations are labelled with the
+phase (e.g. “CMIP5 <italic>historical</italic>” or “CMIP6 <italic>historical</italic>”). A similar argument could be made to
+exclude the AMIP experiments from the DECK. However, the AMIP experiments
+are simpler, more routine, and the dominating role of sea surface
+temperatures and the focus on recent decades means that for most purposes
+AMIP experiments from different phases of CMIP are more likely to provide
+the desired continuity.</p>
+      <p>The persistence and consistency of the DECK will make it possible to track
+changes in performance and response characteristics over future generations
+of models and CMIP phases. Although the set of DECK experiments is not
+expected to evolve much, additional experiments may become enough well
+established as benchmarks (routinely run by modelling groups as they develop
+new model versions) so that in the future they might be migrated into the
+DECK. The common practice of including the DECK in model development efforts
+means that models can contribute to CMIP without carrying out additional
+computationally burdensome experiments. All of the DECK and the historical
+simulations were included in the core set of experiments performed under
+CMIP5 (Taylor et al., 2012), and all but the <italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic> simulation were
+included in even earlier CMIP phases.</p>
+      <p>Under CMIP, credentials of the participating atmosphere–ocean general
+circulation models (AOGCMs) and ESMs are established by performing the DECK
+and CMIP historical simulations, so these experiments are required from all
+models. Together these experiments document the mean climate and response
+characteristics of models. They should be run for each model configuration
+used in a CMIP-Endorsed MIP. A change in model configuration includes any
+change that might affect its simulations other than noise expected from
+different realizations. This would include, for example, a change in model
+resolution, physical processes, or atmospheric chemistry treatment. If an
+ESM is used in both CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>-emission-driven mode and CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>-concentration-driven
+mode in subsequent CMIP6-Endorsed MIPs, then both emission-driven and concentration-driven
+control, and historical simulations should be done and they will be identical in all
+forcings except the treatment of CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>.</p>
+      <p>The forcing data sets that will drive the DECK and CMIP6 historical
+simulations are described separately in a series of invited contributions to
+this special issue. These articles also include some discussion of
+uncertainty in the data sets. The data will be provided by the respective
+author teams and made publicly available through the ESGF using common
+metadata and formats.</p>
+      <p>The historical forcings are based as far as possible on observations and
+cover the period 1850–2014. These include:
+<list list-type="bullet"><list-item>
+      <p>emissions of short-lived species and long-lived greenhouse gases (GHGs),</p></list-item><list-item>
+      <p>GHG concentrations,</p></list-item><list-item>
+      <p>global gridded land-use forcing data sets,</p></list-item><list-item>
+      <p>solar forcing,</p></list-item><list-item>
+      <p>stratospheric aerosol data set (volcanoes),</p></list-item><list-item>
+      <p>AMIP sea surface temperatures (SSTs) and sea ice concentrations (SICs),</p></list-item><list-item>
+      <p>for simulations with prescribed aerosols, a new approach to prescribe
+aerosols in terms of optical properties and fractional change in cloud
+droplet effective radius to provide a more consistent representation of
+aerosol forcing, and</p></list-item><list-item>
+      <p>for models without ozone chemistry, time-varying gridded ozone concentrations
+and nitrogen deposition.</p></list-item></list>
+Some models might require additional forcing data sets (e.g. black carbon on
+snow or anthropogenic dust). Allowing model groups to use different
+forcing<fn id="Ch1.Footn1"><p>Here, we distinguish between an applied input perturbation
+(e.g. the imposed change in some model constituent, property, or boundary
+condition), which we refer to somewhat generically as a “forcing”, and
+radiative forcing, which can be precisely defined. Even if the forcings are
+identical, the resulting radiative forcing depends on a model's radiation scheme
+(among other factors) and will differ among models.</p></fn> data sets might better
+sample uncertainty, but makes it more difficult to assess the uncertainty in
+the response of models to the best estimate of the forcing, available to a
+particular CMIP phase. To avoid conflating uncertainty in the response of
+models to a given forcing, it is strongly preferred for models to be
+integrated with the same forcing in the entry card historical simulations,
+and for forcing uncertainty to be sampled in supplementary simulations that
+are proposed as part of DAMIP. In any case it is important that all forcing
+data sets are documented and are made available alongside the model output on
+the ESGF. Likewise to the extent modelling centres simplify forcings, for
+instance by regridding or smoothing in time or some other dimension, this
+should also be documented.</p>
+      <p>For the future scenarios selected by ScenarioMIP, forcings are provided by
+the integrated assessment model (IAM) community for the period 2015–2100
+(or until 2300 for the extended simulations). For atmospheric emissions and
+concentrations as well as for land use, the forcings are harmonized across
+IAMs and scenarios using a similar procedure as in CMIP5 (van Vuuren et
+al., 2011). This procedure ensures consistency with historical forcing
+data sets and between the different forcing categories. The selection of
+scenarios and the main characteristics are described elsewhere in this
+special issue, while the underlying IAM scenarios are described in a special issue in Global Environmental Change.</p>
+
+<?xmltex \floatpos{t}?><table-wrap id="Ch1.T2" specific-use="star"><caption><p>Overview of DECK and CMIP6 historical simulations providing the
+experiment short names, the CMIP6 labels, brief experiment descriptions, the
+forcing methods, as well as the start and end year and minimum number of
+years per experiment and its major purpose. The DECK and CMIP6 historical
+simulation are used to characterize the CMIP model ensemble. Given resource
+limitations, these entry card simulations for CMIP include only one ensemble
+member per experiment. However, we strongly encourage model groups to submit
+at least three ensemble members for the CMIP historical simulation as
+requested in DAMIP. Large ensembles of AMIP simulations are also encouraged.
+In the “forcing methods” column, “All” means “volcanic, solar, and
+anthropogenic forcings”. All experiments are started on 1 January and end
+on 31 December of the specified years.</p></caption><oasis:table frame="topbot"><?xmltex \begin{scaleboxenv}{.89}[.89]?><oasis:tgroup cols="8">
+     <oasis:colspec colnum="1" colname="col1" align="justify" colwidth="56.905512pt"/>
+     <oasis:colspec colnum="2" colname="col2" align="justify" colwidth="56.905512pt"/>
+     <oasis:colspec colnum="3" colname="col3" align="justify" colwidth="85.358268pt"/>
+     <oasis:colspec colnum="4" colname="col4" align="justify" colwidth="71.13189pt"/>
+     <oasis:colspec colnum="5" colname="col5" align="justify" colwidth="28.452756pt"/>
+     <oasis:colspec colnum="6" colname="col6" align="justify" colwidth="28.452756pt"/>
+     <oasis:colspec colnum="7" colname="col7" align="justify" colwidth="42.679134pt"/>
+     <oasis:colspec colnum="8" colname="col8" align="justify" colwidth="91.048819pt"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">Experiment short name</oasis:entry>  
+         <oasis:entry colname="col2">CMIP6 label</oasis:entry>  
+         <oasis:entry colname="col3">Experiment description</oasis:entry>  
+         <oasis:entry colname="col4">Forcing methods</oasis:entry>  
+         <oasis:entry colname="col5">Start year</oasis:entry>  
+         <oasis:entry colname="col6">End year</oasis:entry>  
+         <oasis:entry colname="col7">Minimum no. years <?xmltex \hack{\hfill\break}?>per <?xmltex \hack{\hfill\break}?>simulation</oasis:entry>  
+         <oasis:entry colname="col8">Major purpose</oasis:entry>
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row rowsep="1">  
+         <oasis:entry namest="col1" nameend="col8" align="left">DECK experiments </oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">AMIP</oasis:entry>  
+         <oasis:entry colname="col2"><italic>amip</italic></oasis:entry>  
+         <oasis:entry colname="col3">Observed SSTs <?xmltex \hack{\hfill\break}?>and SICs prescribed</oasis:entry>  
+         <oasis:entry colname="col4">All; CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concen- <?xmltex \hack{\hfill\break}?>tration prescribed</oasis:entry>  
+         <oasis:entry colname="col5">1979</oasis:entry>  
+         <oasis:entry colname="col6">2014</oasis:entry>  
+         <oasis:entry colname="col7">36</oasis:entry>  
+         <oasis:entry colname="col8">Evaluation, variability</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">Pre-industrial control</oasis:entry>  
+         <oasis:entry colname="col2"><italic>piControl</italic> or <?xmltex \hack{\hfill\break}?> <italic>esm-piControl</italic></oasis:entry>  
+         <oasis:entry colname="col3">Coupled atmosphere– <?xmltex \hack{\hfill\break}?>ocean pre-industrial <?xmltex \hack{\hfill\break}?>control</oasis:entry>  
+         <oasis:entry colname="col4">CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration <?xmltex \hack{\hfill\break}?>prescribed or <?xmltex \hack{\hfill\break}?>calculated</oasis:entry>  
+         <oasis:entry colname="col5">n/a</oasis:entry>  
+         <oasis:entry colname="col6">n/a</oasis:entry>  
+         <oasis:entry colname="col7">500</oasis:entry>  
+         <oasis:entry colname="col8">Evaluation, unforced <?xmltex \hack{\hfill\break}?>variability</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">Abrupt <?xmltex \hack{\hfill\break}?>quadrupling of <?xmltex \hack{\hfill\break}?>CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concen- <?xmltex \hack{\hfill\break}?>tration</oasis:entry>  
+         <oasis:entry colname="col2"><italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic></oasis:entry>  
+         <oasis:entry colname="col3">CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> abruptly quadru- <?xmltex \hack{\hfill\break}?>pled and then held <?xmltex \hack{\hfill\break}?>constant</oasis:entry>  
+         <oasis:entry colname="col4">CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration <?xmltex \hack{\hfill\break}?>prescribed</oasis:entry>  
+         <oasis:entry colname="col5">n/a</oasis:entry>  
+         <oasis:entry colname="col6">n/a</oasis:entry>  
+         <oasis:entry colname="col7">150</oasis:entry>  
+         <oasis:entry colname="col8">Climate sensitivity, <?xmltex \hack{\hfill\break}?>feedback, fast responses</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">1 % yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula> CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> <?xmltex \hack{\hfill\break}?>concentration increase</oasis:entry>  
+         <oasis:entry colname="col2"><italic>1pctCO2</italic></oasis:entry>  
+         <oasis:entry colname="col3">CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> prescribed to <?xmltex \hack{\hfill\break}?>increase at 1 % yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula></oasis:entry>  
+         <oasis:entry colname="col4">CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration <?xmltex \hack{\hfill\break}?>prescribed</oasis:entry>  
+         <oasis:entry colname="col5">n/a</oasis:entry>  
+         <oasis:entry colname="col6">n/a</oasis:entry>  
+         <oasis:entry colname="col7">150</oasis:entry>  
+         <oasis:entry colname="col8">Climate sensitivity, <?xmltex \hack{\hfill\break}?>feedback, idealized <?xmltex \hack{\hfill\break}?>benchmark</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry namest="col1" nameend="col8" align="left">CMIP6 historical simulation </oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">Past <inline-formula><mml:math display="inline"><mml:mo>∼</mml:mo></mml:math></inline-formula> 1.5 <?xmltex \hack{\hfill\break}?>centuries</oasis:entry>  
+         <oasis:entry colname="col2"><italic>historical</italic> or <?xmltex \hack{\hfill\break}?> <italic>esm-hist</italic></oasis:entry>  
+         <oasis:entry colname="col3">Simulation of the <?xmltex \hack{\hfill\break}?>recent past</oasis:entry>  
+         <oasis:entry colname="col4">All; CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concen- <?xmltex \hack{\hfill\break}?>tration prescribed <?xmltex \hack{\hfill\break}?>or calculated</oasis:entry>  
+         <oasis:entry colname="col5">1850</oasis:entry>  
+         <oasis:entry colname="col6">2014</oasis:entry>  
+         <oasis:entry colname="col7">165</oasis:entry>  
+         <oasis:entry colname="col8">Evaluation</oasis:entry>
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup><?xmltex \end{scaleboxenv}?></oasis:table></table-wrap>
+
+      <p>An important gap identified in CMIP5, and in previous CMIP phases, was a
+lack of careful quantification of the radiative forcings from the different
+specified external forcing factors (e.g. GHGs, sulphate aerosols) in each
+model (Stouffer et al., 2015). This has impaired attempts to
+identify reasons for differences in model responses. The effective
+radiative forcing or ERF component of the Radiative Forcing MIP (RFMIP)
+includes fixed SST simulations to diagnose the forcing (RFMIP-lite),
+which are further detailed in the corresponding contribution to this special issue. Although not included as part of the DECK, in recognition of this
+deficiency in past phases of CMIP we strongly encourage all CMIP6 modelling
+groups to participate in RFMIP-lite. The modest additional effort would
+enable the radiative forcing to be characterized for both historic and
+future scenarios across the model ensemble. Knowing this forcing would lead
+to a step change in efforts to understand the spread of model responses for
+CMIP6 and contribute greatly to answering one of CMIP6's science questions.</p>
+      <p>An overview of the main characteristics of the DECK and CMIP6 historical
+simulations appears in Table 2. Here we briefly describe these experiments.
+Detailed specifications for the DECK and CMIP6 historical simulations are
+provided in Appendix A and are summarized in Table A1.</p>
+<sec id="Ch1.S3.SS1">
+  <title>The DECK</title>
+      <p>The AMIP and pre-industrial control simulations of the DECK provide
+opportunities for evaluating the atmospheric model and the coupled system,
+and in addition they establish a baseline for performing many of the CMIP6
+experiments. Many experiments branch from, and are compared with, the
+pre-industrial control. Similarly, a number of diagnostic atmospheric
+experiments use AMIP as a control. The idealized CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>-forced experiments
+in the DECK (<italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic> and <italic>1pctCO2</italic>),
+despite their simplicity, can reveal fundamental forcing and feedback
+response characteristics of models.</p>
+      <p>For nearly 3  decades, AMIP simulations (Gates et al., 1999) have been routinely
+relied on by modelling centres to help in the evaluation of the atmospheric
+component of their models. In AMIP simulations, the SSTs and SICs are
+prescribed based on observations. The idea is to analyse and evaluate the
+atmospheric and land components of the climate system when they are
+constrained by the observed ocean conditions. These simulations can help
+identify which model errors originate in the atmosphere, land, or their
+interactions, and they have proven useful in addressing a great variety of
+questions pertaining to recent climate changes. The AMIP simulations
+performed as part of the DECK cover at least the period from January 1979 to
+December 2014. The end date will continue to evolve as the SSTs and SICs are
+updated with new observations. Besides prescription of ocean conditions in
+these simulations, realistic forcings are imposed that should be identical
+to those applied in the CMIP historical simulations. Large ensembles of AMIP
+simulations are encouraged as they can help to improve the signal-to-noise
+ratio (Li et al., 2015).</p>
+      <p>The remaining three experiments in the DECK are premised on the coupling of
+the atmospheric and oceanic circulation. The pre-industrial control
+simulation (<italic>piControl</italic> or <italic>esm-piControl)</italic> is performed under conditions chosen to be representative of
+the period prior to the onset of large-scale industrialization, with 1850
+being the reference year. Historically, the industrial revolution began in
+the 18th century, and in nature the climate in 1850 was not stable as
+it was already changing due to prior historical changes in radiative
+forcings. In CMIP6, however, as in earlier CMIP phases, the control
+simulation is an attempt to produce a stable quasi-equilibrium climate state
+under 1850 conditions. When discussing and analysing historical and future
+radiative forcings, it needs to be recognized that the radiative forcing in
+1850 due to anthropogenic greenhouse gas increases alone was already around
+0.25 W m<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">2</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula> (Cubasch, 2013) although
+aerosols might have offset that to some extent. In addition, there were
+other pre-1850 secular changes, for example, in land use (Hurtt et al.,
+2011), and as a result, global net annual emissions of carbon from land use
+and land-use change already were responsible in 1850 for about 0.6 Pg C yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula>
+(Houghton, 2010). Under the assumptions of the control simulation,
+however, there are no secular changes in forcing, so the concentrations
+and/or sources of atmospheric constituents (e.g. GHGs and emissions of
+short-lived species) as well as land use are held fixed, as are Earth's
+orbital characteristics. Because of the absence of both naturally occurring
+changes in forcing (e.g. volcanoes, orbital or solar changes) and
+human-induced changes, the control simulation can be used to study the
+unforced internal variability of the climate system.</p>
+      <p>An initial climate spin-up portion of a control simulation, during which
+the climate begins to come into balance with the forcing, is usually
+performed. At the end of the spin-up period, the <italic>piControl</italic> starts. The
+<italic>piControl</italic> serves as a baseline for experiments that branch from it. To account for
+the effects of any residual drift, it is required that the <italic>piControl</italic> simulation
+extends as far beyond the branching point as any experiment to which it will
+be compared. Only then can residual climate drift in an experiment be
+removed so that it is not misinterpreted as part of the model's forced
+response. The recommended minimum length for the <italic>piControl</italic> is 500 years.</p>
+      <p>The two DECK climate change experiments branch from some point in the 1850
+control simulation and are designed to document basic aspects of the climate
+system response to greenhouse gas forcing. In the first, the CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+concentration is immediately and abruptly quadrupled from the global annual mean 1850 value that is used in <italic>piControl</italic>. This <italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic> simulation has proven to be useful for characterizing the
+radiative forcing that arises from an increase in atmospheric CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> as
+well as changes that arise indirectly due to the warming. It can also be
+used to estimate a model's equilibrium climate sensitivity (ECS,
+Gregory et al., 2004). In the second, the CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+concentration is increased gradually at a rate of 1 % per year. This
+experiment has been performed in all phases of CMIP since CMIP2, and serves
+as a consistent and useful benchmark for analysing model transient climate
+response (TCR). The TCR takes into account the rate of ocean heat uptake
+which governs the pace of all time-evolving climate change (e.g.
+Murphy and Mitchell, 1995). In addition to the TCR, the
+1 % CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> integration with ESMs that include explicit representation of
+the carbon cycle allows the calculation of the transient climate response to
+cumulative carbon emissions (TCRE), defined as the transient global average
+surface temperature change per unit of accumulated CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> emissions (IPCC,
+2013). Despite their simplicity, these experiments provide a surprising
+amount of insight into the behaviour of models subject to more complex
+forcing (e.g. Bony et al., 2013; Geoffroy et al., 2013).</p>
+</sec>
+<sec id="Ch1.S3.SS2">
+  <title>CMIP historical simulations</title>
+      <p>In addition to the DECK, CMIP requests models to simulate the historical
+period, defined to begin in 1850 and extend to the near present. The CMIP
+historical simulation and its CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>-emission-driven counterpart,
+<italic>esm-hist</italic>, branch from the <italic>piControl</italic> and <italic>esm-piControl</italic>, respectively (see details in Sect. A1.2). These simulations
+are forced, based on observations, by evolving, externally imposed forcings
+such as solar variability, volcanic aerosols, and changes in atmospheric
+composition (GHGs and aerosols) caused by human activities. The CMIP
+historical simulations provide rich opportunities to assess model ability to
+simulate climate, including variability and century timescale trends (e.g. Flato et al., 2013). These
+simulations can also be analysed to determine whether climate model forcing
+and sensitivity are consistent with the observational record, which provides
+opportunities to better bound the magnitude of aerosol forcing (e.g.
+Stevens, 2015). In addition they, along with the control run, provide
+the baseline simulations for performing formal detection and attribution
+studies (e.g. Stott et al., 2006) which help uncover the causes of
+forced climate change.</p>
+      <p>As with performing control simulations, models that include representation of
+the carbon cycle should normally perform two different CMIP historical
+simulations: one with prescribed CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration and the other with
+prescribed CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> emissions (accounting explicitly for fossil fuel
+combustion). In the second, CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentrations are predicted by the
+model. The treatment of other GHGs should be identical in both simulations.
+Both types of simulation are useful in evaluating how realistically the
+model represents the response of the carbon cycle anthropogenic CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+emissions, but the prescribed concentration simulation enables these more
+complex models to be evaluated fairly against those models without
+representation of carbon cycle processes.</p>
+</sec>
+<sec id="Ch1.S3.SS3">
+  <title>Common standards, infrastructure, and documentation</title>
+      <p>A key to the success of CMIP and one of the motivations for incorporating a
+wide variety of coordinated modelling activities under a single framework in
+a specific phase of CMIP (now CMIP6) is the desire to reduce duplication of
+effort, minimize operational and computational burdens, and establish common
+practices in producing and analysing large amounts of model output. To
+enable automated processing of output from dozens of different models, CMIP
+has led the way in encouraging adoption of data standards (governing
+structure and metadata) that facilitate development of software
+infrastructure in support of coordinated modelling activities. The ESGF has
+capitalized on this standardization to provide access to CMIP model output
+hosted by institutions around the world. As the complexity of CMIP has
+increased and as the potential use of model output expands beyond the
+research community, the evolution of the climate modelling infrastructure
+requires enhanced coordination. To help in this regard, the WGCM
+Infrastructure Panel (WIP) was set up, and is now providing guidance on
+requirements and establishing specifications for model output, model and
+simulation documentation, and archival and delivery systems for CMIP6 data.
+In parallel to the development of the CMIP6 experiment design, the ESGF
+capabilities are being further extended and improved. In CMIP5, with over 1,000 different model/experiment combinations, a first attempt was also
+made to capture structured metadata describing the models and the
+simulations themselves. Based upon the Common Information Model (CIM,
+Lawrence et al., 2012), tools were
+provided to capture documentation of models and simulations. This effort is
+now continuing under the banner of the international ES-DOC activity, which
+establishes agreements on common Controlled Vocabularies (CVs) to describe models
+and simulations. Modelling groups will be required to provide documentation following
+a common template and adhering to the CVs. With the documentation recorded
+uniformly across models, researchers will, for example, be able to use web-based
+tools to determine differences in model versions and differences in forcing
+and other conditions that affect each simulation. Further details on the CMIP6
+infrastructure can be found in the WIP contribution to this special issue.</p>
+      <p>A more routine benchmarking and evaluation of the models is envisaged to be
+a central part of CMIP6. As noted above, one purpose of the DECK and CMIP
+historical simulations is to provide a basis for documenting model
+simulation characteristics. Towards that end an infrastructure is being
+developed to allow analysis packages to be routinely executed whenever new
+model experiments are contributed to the CMIP archive at the ESGF. These
+efforts utilize observations served by the ESGF contributed from the
+obs4MIPs (Ferraro et al., 2015; Teixeira et al., 2014) and ana4MIPs
+projects. Examples of available tools that target routine evaluation in CMIP
+include the PCMDI metrics software (Gleckler et al., 2016)
+and the Earth System Model Evaluation Tool (ESMValTool, Eyring et al., 2016), which brings together established diagnostics such as those used in
+the evaluation chapter of IPCC AR5 (Flato et al., 2013). The ESMValTool
+also integrates other packages, such as the NCAR Climate Variability
+Diagnostics Package (Phillips et al., 2014), or diagnostics
+such as the cloud regime metric (Williams and Webb, 2009) developed
+by the Cloud Feedback MIP (CFMIP) community. These tools can be used to
+broadly and comprehensively characterize the performance of the wide variety
+of models and model versions that will contribute to CMIP6. This evaluation
+activity can, compared with CMIP5, more quickly inform users of model
+output, as well as the modelling centres, of the strengths and weaknesses
+of the simulations, including the extent to which long-standing model errors
+remain evident in newer models. Building such a community-based capability
+is not meant to replace how CMIP research is currently performed but rather
+to complement it. These tools can also be used to compute derived variables
+or indices alongside the ESGF, and their output could be provided back to
+the distributed ESGF archive.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F2"><caption><p>Schematic of the CMIP/CMIP6 experiment design. The inner ring and
+surrounding white text involve standardized functions of all CMIP DECK
+experiments and the CMIP6 historical simulation. The middle ring shows
+science topics related specifically to CMIP6 that are addressed by the
+CMIP6-Endorsed MIPs, with MIP topics shown in the outer ring. This framework
+is superimposed on the scientific backdrop for CMIP6 which are the seven
+WCRP Grand Science Challenges.</p></caption>
+          <?xmltex \igopts{width=241.848425pt}?><graphic xlink:href="https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016-f02.png"/>
+
+        </fig>
+
+</sec>
+</sec>
+<sec id="Ch1.S4">
+  <title>CMIP6</title>
+<sec id="Ch1.S4.SS1">
+  <title>Scientific focus of CMIP6</title>
+      <p>In addition to the DECK and CMIP historical simulations, a number of
+additional experiments will colour a specific phase of CMIP, now CMIP6.
+These experiments are likely to change from one CMIP phase to the next. To
+maximize the relevance and impact of CMIP6, it was decided to use the WCRP Grand
+Science Challenges (GCs) as the scientific backdrop of the CMIP6
+experimental design. By promoting research on critical science questions for
+which specific gaps in knowledge have hindered progress so far, but for
+which new opportunities and more focused efforts raise the possibility of
+significant progress on the timescale of 5–10 years, these GCs constitute a
+main component of the WCRP strategy to accelerate progress in climate
+science (Brasseur and Carlson, 2015). They relate to
+(1) advancing understanding of the role of clouds in the general atmospheric
+circulation and climate sensitivity (Bony et al., 2015),
+(2) assessing the response of the cryosphere to a warming climate and its
+global consequences, (3) understanding the factors that control water
+availability over land (Trenberth and Asrar, 2014), (4) assessing
+climate extremes, what controls them, how they have changed in the past and
+how they might change in the future, (5) understanding and predicting regional sea level change and its
+coastal impacts, (6) improving near-term climate predictions, and (7) determining how biogeochemical cycles and feedback control greenhouse gas
+concentrations and climate change.
+<?xmltex \hack{\newpage}?>
+These GCs will be using the full spectrum of observational, modelling and
+analytical expertise across the WCRP, and in terms of modelling most GCs
+will address their specific science questions through a hierarchy of
+numerical models of different complexities. Global coupled models obviously
+constitute an essential element of this hierarchy, and CMIP6 experiments
+will play a prominent role across all GCs by helping to answer the following
+three CMIP6 science questions: How does the Earth system respond to forcing?
+What are the origins and consequences of systematic model biases? How can we
+assess future climate change given internal climate variability, climate
+predictability, and uncertainties in scenarios?</p>
+      <p>These three questions will be at the centre of CMIP6. Science topics related specifically to CMIP6 will be addressed
+through a range of CMIP6-Endorsed MIPs that are organized by the respective
+communities and overseen by the CMIP Panel (Fig. 2). Through these different
+MIPs and their connection to the GCs, the goal is to fill some of the main
+scientific gaps of previous CMIP phases. This includes, in particular,
+facilitating the identification and interpretation of model systematic
+errors, improving the estimate of radiative forcings in past and future
+climate change simulations, facilitating the identification of robust
+climate responses to aerosol forcing during the historical period, better
+accounting of the impact of short-term forcing agents and land use on
+climate, better understanding the mechanisms of decadal climate variability,
+along with many other issues not addressed satisfactorily in CMIP5
+(Stouffer et al., 2015). In endorsing a number of these MIPs,
+the CMIP Panel acted to minimize overlaps among the MIPs and to reduce the
+burden on modelling groups, while maximizing the scientific complementarity
+and synergy among the different MIPs.</p>
+</sec>
+<sec id="Ch1.S4.SS2">
+  <title>The CMIP6-Endorsed MIPs</title>
+      <p>Close to 30 suggestions for CMIP6 MIPs have been received so far, of which 21 MIPs were
+eventually endorsed and invited to participate (Table 3). Of those
+not selected some were asked to work with other proposed MIPs with
+overlapping science goals and objectives. Of the 21 CMIP6-Endorsed MIPs,
+4 are diagnostic in nature, which means that they define and analyse
+additional output, but do not require additional experiments. In the
+remaining 17 MIPs, a total of around 190 experiments have been proposed
+resulting in 40 000 model simulation years with around half of these in Tier 1.
+The CMIP6-Endorsed MIPs show broad coverage and distribution across the
+three CMIP6 science questions, and all are linked to the WCRP Grand Science
+Challenges (Fig. 3).</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F3"><caption><p>Contributions of CMIP6-Endorsed MIPs to the three CMIP6 science
+questions and the WCRP Grand Science Challenges. A filled circle indicates
+highest priority and an open circle, second highest priority. Some of the
+MIPs additionally contribute with lower priority to other CMIP6 science
+questions or WCRP Grand Science Challenges.</p></caption>
+          <?xmltex \igopts{width=241.848425pt}?><graphic xlink:href="https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016-f03.png"/>
+
+        </fig>
+
+<?xmltex \floatpos{p}?><table-wrap id="Ch1.T3" specific-use="star"><caption><p>List of CMIP6-Endorsed MIPs along with the long name of the MIP, the
+primary goal(s) and the main CMIP6 science theme as displayed in Fig. 2. Each
+of these MIPs is described in more detail in a separate contribution to this
+special issue. MIPs marked with <inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mo>∗</mml:mo></mml:msup></mml:math></inline-formula> are diagnostic MIPs.</p></caption><oasis:table frame="topbot"><oasis:tgroup cols="4">
+     <oasis:colspec colnum="1" colname="col1" align="justify" colwidth="56.905512pt"/>
+     <oasis:colspec colnum="2" colname="col2" align="justify" colwidth="71.13189pt"/>
+     <oasis:colspec colnum="3" colname="col3" align="justify" colwidth="261.765354pt"/>
+     <oasis:colspec colnum="4" colname="col4" align="justify" colwidth="56.905512pt"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">Short name of <?xmltex \hack{\hfill\break}?>MIP</oasis:entry>  
+         <oasis:entry colname="col2">Long name of MIP</oasis:entry>  
+         <oasis:entry colname="col3">Primary goal(s) in CMIP6</oasis:entry>  
+         <oasis:entry colname="col4">Main CMIP6 <?xmltex \hack{\hfill\break}?>science theme</oasis:entry>
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">AerChemMIP</oasis:entry>  
+         <oasis:entry colname="col2">Aerosols and <?xmltex \hack{\hfill\break}?>Chemistry Model <?xmltex \hack{\hfill\break}?>Intercomparison Project</oasis:entry>  
+         <oasis:entry colname="col3">(a) Diagnosing forcings and feedback of tropospheric aerosols, tropospheric ozone precursors and the chemically reactive WMGHGs; (b) documenting and understanding past and future changes in the chemical composition of the atmosphere; (c) estimating the global-to-regional climate response from these changes.</oasis:entry>  
+         <oasis:entry colname="col4">Chemistry/ Aerosols</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">C<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mn mathvariant="normal">4</mml:mn></mml:msup></mml:math></inline-formula>MIP</oasis:entry>  
+         <oasis:entry colname="col2">Coupled Climate <?xmltex \hack{\hfill\break}?>Carbon Cycle <?xmltex \hack{\hfill\break}?>Model Intercom- <?xmltex \hack{\hfill\break}?>parison Project</oasis:entry>  
+         <oasis:entry colname="col3">Understanding and quantifying future century-scale changes in the global carbon cycle and its feedback on the climate system, making the link between CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> emissions and climate change.</oasis:entry>  
+         <oasis:entry colname="col4">Carbon cycle</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">CFMIP</oasis:entry>  
+         <oasis:entry colname="col2">Cloud Feedback <?xmltex \hack{\hfill\break}?>Model Intercom- <?xmltex \hack{\hfill\break}?>parison Project</oasis:entry>  
+         <oasis:entry colname="col3">Improving assessments of cloud feedback via (a) improved understanding of cloud-climate feedback mechanisms and (b) better evaluation of clouds and cloud feedback in climate models. Also improving understanding of circulation, regional-scale precipitation, and non-linear changes.</oasis:entry>  
+         <oasis:entry colname="col4">Clouds/ <?xmltex \hack{\hfill\break}?>Circulation</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">DAMIP</oasis:entry>  
+         <oasis:entry colname="col2">Detection and <?xmltex \hack{\hfill\break}?>Attribution Model <?xmltex \hack{\hfill\break}?>Intercomparison Project</oasis:entry>  
+         <oasis:entry colname="col3">(a) Estimating the contribution of external forcings to observed global and regional climate changes; (b) observationally constraining future climate change projections by scaling future GHG and other anthropogenic responses using regression coefficients derived for the historical period.</oasis:entry>  
+         <oasis:entry colname="col4">Characterizing <?xmltex \hack{\hfill\break}?>forcings</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">DCPP</oasis:entry>  
+         <oasis:entry colname="col2">Decadal Climate <?xmltex \hack{\hfill\break}?>Prediction Project</oasis:entry>  
+         <oasis:entry colname="col3">Predicting and understanding forced climate change and internal variability up to 10 years into the future through a coordinated set of hindcast experiments, targeted experiments to understand the physical processes, and the ongoing production of skilful decadal predictions.</oasis:entry>  
+         <oasis:entry colname="col4">Decadal <?xmltex \hack{\hfill\break}?>prediction</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">FAFMIP</oasis:entry>  
+         <oasis:entry colname="col2">Flux-Anomaly-Forced Model <?xmltex \hack{\hfill\break}?>Intercomparison Project</oasis:entry>  
+         <oasis:entry colname="col3">Explaining the model spread in climate projections of ocean climate change forced by CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> increase, especially regarding the geographical patterns and magnitude of sea level change, ocean heat uptake, and thermal expansion.</oasis:entry>  
+         <oasis:entry colname="col4">Ocean/Land/ <?xmltex \hack{\hfill\break}?>Ice</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">GeoMIP</oasis:entry>  
+         <oasis:entry colname="col2">Geoengineering Model Intercom- <?xmltex \hack{\hfill\break}?>parison Project</oasis:entry>  
+         <oasis:entry colname="col3">Assessing the climate system response (including on extreme events) to proposed radiation modification geoengineering schemes by evaluating their efficacies, benefits, and side effects.</oasis:entry>  
+         <oasis:entry colname="col4">Geoengineering</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">GMMIP</oasis:entry>  
+         <oasis:entry colname="col2">Global Monsoons <?xmltex \hack{\hfill\break}?>Model Intercom- <?xmltex \hack{\hfill\break}?>parison Project</oasis:entry>  
+         <oasis:entry colname="col3">(a) Improving understanding of physical processes in global monsoons system; (b) better simulating the mean state, interannual variability, and long-term changes of global monsoons.</oasis:entry>  
+         <oasis:entry colname="col4">Regional phenomena</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">HighResMIP</oasis:entry>  
+         <oasis:entry colname="col2">High-Resolution <?xmltex \hack{\hfill\break}?>Model Intercom- <?xmltex \hack{\hfill\break}?>parison Project</oasis:entry>  
+         <oasis:entry colname="col3">Assessing the robustness of improvements in the representation of important climate processes with weather-resolving global model resolutions (<inline-formula><mml:math display="inline"><mml:mo>∼</mml:mo></mml:math></inline-formula> 25 km or finer), within a simplified framework using the physical climate system only with constrained aerosol forcing.</oasis:entry>  
+         <oasis:entry colname="col4">Regional phenomena</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">ISMIP6</oasis:entry>  
+         <oasis:entry colname="col2">Ice Sheet Model <?xmltex \hack{\hfill\break}?>Intercomparison Project for CMIP6</oasis:entry>  
+         <oasis:entry colname="col3">Improving confidence in projections of the sea level rise associated with mass loss from the ice sheets of Greenland and Antarctica.</oasis:entry>  
+         <oasis:entry colname="col4">Ocean/Land/ <?xmltex \hack{\hfill\break}?>Ice</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">LS3MIP</oasis:entry>  
+         <oasis:entry colname="col2">Land Surface, <?xmltex \hack{\hfill\break}?>Snow and Soil <?xmltex \hack{\hfill\break}?>Moisture</oasis:entry>  
+         <oasis:entry colname="col3">Providing a comprehensive assessment of land surface, snow, and soil moisture-climate feedback, and diagnosing systematic biases in the land modules of current ESMs using constrained land-module-only experiments.</oasis:entry>  
+         <oasis:entry colname="col4">Ocean/Land/ <?xmltex \hack{\hfill\break}?>Ice</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">LUMIP</oasis:entry>  
+         <oasis:entry colname="col2">Land-Use Model <?xmltex \hack{\hfill\break}?>Intercomparison Project</oasis:entry>  
+         <oasis:entry colname="col3">Quantifying the effects of land use on climate and biogeochemical cycling (past–future), and assessing the potential for alternative land management strategies to mitigate climate change.</oasis:entry>  
+         <oasis:entry colname="col4">Land use</oasis:entry>
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup></oasis:table></table-wrap>
+
+<?xmltex \hack{\addtocounter{table}{-1}}?><?xmltex \floatpos{t}?><table-wrap id="Ch1.T4" specific-use="star"><caption><p>Continued.</p></caption><oasis:table frame="topbot"><oasis:tgroup cols="4">
+     <oasis:colspec colnum="1" colname="col1" align="justify" colwidth="56.905512pt"/>
+     <oasis:colspec colnum="2" colname="col2" align="justify" colwidth="71.13189pt"/>
+     <oasis:colspec colnum="3" colname="col3" align="justify" colwidth="261.765354pt"/>
+     <oasis:colspec colnum="4" colname="col4" align="justify" colwidth="56.905512pt"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">OMIP</oasis:entry>  
+         <oasis:entry colname="col2">Ocean Model In- <?xmltex \hack{\hfill\break}?>tercomparison Project</oasis:entry>  
+         <oasis:entry colname="col3">Providing a framework for evaluating, understanding, and improving ocean, sea ice, and biogeochemical, including inert tracers, components of climate and Earth system models contributing to CMIP6. Protocols are provided to perform coordinated ocean/sea ice/tracer/biogeochemistry simulations forced with common atmospheric data sets.</oasis:entry>  
+         <oasis:entry colname="col4">Ocean/Land/ <?xmltex \hack{\hfill\break}?>Ice</oasis:entry>
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">PMIP</oasis:entry>  
+         <oasis:entry colname="col2">Paleoclimate Mod- <?xmltex \hack{\hfill\break}?>elling Intercompar- <?xmltex \hack{\hfill\break}?>ison Project</oasis:entry>  
+         <oasis:entry colname="col3">(a) Analysing the response to forcings and major feedback for past climates outside the range of recent variability; (b) assessing the credibility of climate models used for future climate projections.</oasis:entry>  
+         <oasis:entry colname="col4">Paleo</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">RFMIP</oasis:entry>  
+         <oasis:entry colname="col2">Radiative Forcing <?xmltex \hack{\hfill\break}?>Model Intercom- <?xmltex \hack{\hfill\break}?>parison Project</oasis:entry>  
+         <oasis:entry colname="col3">(a) Characterizing the global and regional effective radiative forcing for each model for historical and 4<inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula>CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> simulations; (b) assessing the absolute accuracy of clear-sky radiative transfer parameterizations; (c) identifying the robust impacts of aerosol radiative forcing during the historical period.</oasis:entry>  
+         <oasis:entry colname="col4">Characterizing forcings</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">ScenarioMIP</oasis:entry>  
+         <oasis:entry colname="col2">Scenario Model <?xmltex \hack{\hfill\break}?>Intercomparison Project</oasis:entry>  
+         <oasis:entry colname="col3">(a) Facilitating integrated research on the impact of plausible future scenarios over physical and human systems, and on mitigation and adaptation options; (b) addressing targeted studies on the effects of particular forcings in collaboration with other MIPs; (c) help quantifying projection uncertainties based on multi-model ensembles and emergent constraints.</oasis:entry>  
+         <oasis:entry colname="col4">Scenarios</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">VolMIP</oasis:entry>  
+         <oasis:entry colname="col2">Volcanic Forcings <?xmltex \hack{\hfill\break}?>Model Intercom- <?xmltex \hack{\hfill\break}?>parison Project</oasis:entry>  
+         <oasis:entry colname="col3">(a) Assessing to what extent responses of the coupled ocean–atmosphere system to strong volcanic forcing are robustly simulated across state-of-the-art coupled climate models; (b) identifying the causes that limit robust simulated behaviour, especially differences in their treatment of physical processes</oasis:entry>  
+         <oasis:entry colname="col4">Characterizing forcings</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">CORDEX<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mo>∗</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>  
+         <oasis:entry colname="col2">Coordinated Re- <?xmltex \hack{\hfill\break}?>gional Climate <?xmltex \hack{\hfill\break}?>Downscaling Experiment</oasis:entry>  
+         <oasis:entry colname="col3">Advancing and coordinating the science and application of regional climate downscaling (RCD) through statistical and dynamical downscaling of CMIP DECK, CMIP6 <italic>historical</italic>, and ScenarioMIP output.</oasis:entry>  
+         <oasis:entry colname="col4">Impacts</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">DynVarMIP<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mo>∗</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>  
+         <oasis:entry colname="col2">Dynamics and Va- <?xmltex \hack{\hfill\break}?>riability Model In- <?xmltex \hack{\hfill\break}?>tercomparison Project</oasis:entry>  
+         <oasis:entry colname="col3">Defining and analysing diagnostics that enable a mechanistic approach to confront model biases and understand the underlying causes behind circulation changes with a particular emphasis on the two-way coupling between the troposphere and the stratosphere.</oasis:entry>  
+         <oasis:entry colname="col4">Clouds/ <?xmltex \hack{\hfill\break}?>Circulation</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">SIMIP<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mo>∗</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>  
+         <oasis:entry colname="col2">Sea Ice Model <?xmltex \hack{\hfill\break}?>Intercomparison Project</oasis:entry>  
+         <oasis:entry colname="col3">Understanding the role of sea ice and its response to climate change by defining and analysing a comprehensive set of variables and process-oriented diagnostics that describe the sea ice state and its atmospheric and ocean forcing.</oasis:entry>  
+         <oasis:entry colname="col4">Ocean/Land/ <?xmltex \hack{\hfill\break}?>Ice</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1">VIACS AB<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mo>∗</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>  
+         <oasis:entry colname="col2">Vulnerability, Im- <?xmltex \hack{\hfill\break}?>pacts, Adaptation <?xmltex \hack{\hfill\break}?>and Climate <?xmltex \hack{\hfill\break}?>Services Advisory Board</oasis:entry>  
+         <oasis:entry colname="col3">Facilitating a two-way dialogue between the CMIP6 modelling community and VIACS experts, who apply CMIP6 results for their numerous research and climate services, towards an informed construction of model scenarios and simulations and the design of online diagnostics, metrics, and visualization of relevance to society.</oasis:entry>  
+         <oasis:entry colname="col4">Impacts</oasis:entry>
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup></oasis:table></table-wrap>
+
+      <p>Each of the 21 CMIP6-Endorsed MIPs is described in a separate invited
+contribution to this special issue. These contributions will detail the goal
+of the MIP and the major scientific gaps the MIP is addressing, and will
+specify what is new compared to CMIP5 and previous CMIP phases. The
+contributions will include a description of the experimental design and
+scientific justification of each of the experiments for Tier 1 (and possibly
+beyond), and will link the experiments and analysis to the DECK and CMIP6
+historical simulations. They will additionally include an analysis plan to
+fully justify the resources used to produce the various requested variables,
+and if the analysis plan is to compare model results to observations, the
+contribution will highlight possible model diagnostics and performance
+metrics specifying whether the comparison entails any particular requirement
+for the simulations or outputs (e.g. the use of observational simulators).
+In addition, possible observations and reanalysis products for model
+evaluation are discussed and the MIPs are encouraged to help facilitate
+their use by contributing them to the obs4MIPs/ana4MIPs archives at the ESGF
+(see Sect. 3.3). In some MIPs, additional forcings beyond those used in the
+DECK and CMIP6 historical simulations are required, and these are described
+in the respective contribution as well.
+<?xmltex \hack{\newpage}?>
+A number of MIPs are developments and/or continuation of long-standing
+science themes. These include MIPs specifically addressing science questions
+related to cloud feedback and the understanding of spatial patterns of
+circulation and precipitation (CFMIP), carbon cycle feedback, and the
+understanding of changes in carbon fluxes and stores (C<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mn mathvariant="normal">4</mml:mn></mml:msup></mml:math></inline-formula>MIP), detection
+and attribution (DAMIP) that newly includes 21st-century GHG-only
+simulations allowing the projected responses to GHGs and other forcings to
+be separated and scaled to derive observationally constrained projections,
+and paleoclimate (PMIP), which assesses the credibility of the model
+response to forcing outside the range of recent variability. These MIPs
+reflect the importance of key forcing and feedback processes in
+understanding past, present, and future climate change and have developed new
+experiments and science plans focused on emerging new directions that will
+be at the centre of the WCRP Grand Science Challenges. A few new MIPs have
+arisen directly from gaps in understanding in CMIP5 (Stouffer
+et al., 2015), for example, poor quantification of radiative forcing (RFMIP),
+better understanding of ocean heat uptake and sea level rise (FAFMIP), and
+understanding of model response to volcanic forcing (VolMIP).</p>
+      <p>Since CMIP5, other MIPs have emerged as the modelling community has
+developed more complex ESMs with interactive components beyond the carbon
+cycle. These include the consistent quantification of forcings and feedback
+from aerosols and atmospheric chemistry (AerChemMIP), and, for the first
+time in CMIP, modelling of sea level rise from land ice sheets (ISMIP6).</p>
+      <p>Some MIPs specifically target systematic biases focusing on improved
+understanding of the sea ice state and its atmospheric and oceanic forcing
+(SIMIP), the physical and biogeochemical aspects of the ocean (OMIP), land,
+snow and soil moisture processes (LS3MIP), and improved understanding of
+circulation and variability with a focus on stratosphere–troposphere
+coupling (DynVarMIP). With the increased emphasis in the climate science
+community on the need to represent and understand changes in regional
+circulation, systematic biases are also addressed on a more regional scale
+by the Global Monsoon MIP (GMMIP) and a first coordinated activity on high-resolution modelling (HighResMIP).</p>
+      <p>For the first time, future scenario experiments, previously coordinated
+centrally as part of the CMIP5 core experiments, will be run as an MIP
+ensuring clear definition and well-coordinated science questions.
+ScenarioMIP will run a new set of future long-term (century timescale)
+integrations engaging input from both the climate science and integrated
+assessment modelling communities. The new scenarios are based on a matrix
+that uses the shared socioeconomic pathways (SSPs, O'Neill
+et al., 2015) and forcing levels of the Representative Concentration
+Pathways (RCP) as axes. As a set, they span the same range as the CMIP5 RCPs
+(Moss et al., 2010), but fill critical gaps for intermediate forcing
+levels and questions, for example, on short-lived species and land use. The
+near-term experiments (10–30 years) are coordinated by the decadal climate
+prediction project (DCPP) with improvements expected, for example, from the
+initialization of additional components beyond the ocean and from a more
+detailed process understanding and evaluation of the predictions to better
+identify sources and limits of predictability.</p>
+      <p>Other MIPs include specific future mitigation options, e.g. the land use MIP
+(LUMIP) that is for the first time in CMIP isolating regional land
+management strategies to study how different surface types respond to
+climate change and direct anthropogenic modifications, or the geoengineering
+MIP (GeoMIP), which examines climate impacts of newly proposed radiation
+modification geoengineering strategies.</p>
+      <p>The diagnostic MIP CORDEX will oversee the downscaling of CMIP6 models for
+regional climate projections. Another historic development in our field that
+provides, for the first time in CMIP, an avenue for a more formal
+communication between the climate modelling and user community is the
+endorsement of the vulnerability, impacts, and adaptation and climate
+services advisory board (VIACS AB). This diagnostic MIP requests certain key
+variables of interest to the VIACS community be delivered in a timely manner
+to be used by climate services and in impact studies.</p>
+      <p>All MIPs define output streams in the centrally coordinated CMIP6 data
+request for each of their own experiments as well as the DECK and CMIP6
+historical simulations (see the CMIP6 data request contribution to this
+special issue for details). This will ensure that the required variables are
+stored at the frequency and resolution required to address the specific
+science questions and evaluation needs of each MIP and to enable a broad
+characterization of the performance of the CMIP6 models.</p>
+      <p>We note that only the Tier 1 MIP experiments are overseen by the CMIP Panel,
+but additional experiments are proposed by the MIPs in Tiers 2 and 3. We
+encourage the modelling groups to participate in the full suite of
+experiments beyond Tier 1 to address in more depth the scientific questions
+posed.</p>
+      <p>The call for MIP applications for CMIP6 is still open and new proposals will
+be reviewed at the annual WGCM meetings. However, we point out that the
+additional MIPs suggested after the CMIP6 data request has been finalized
+will have to work with the already defined model output from the DECK and
+CMIP6 historical simulations, or work with the modelling group to recover
+additional variables from their internal archives. We also point out that
+some experiments proposed by CMIP6-Endorsed MIPs may not be finished until
+after CMIP6 ends.</p>
+</sec>
+</sec>
+<sec id="Ch1.S5" sec-type="conclusions">
+  <title>Summary</title>
+      <p>CMIP6 continues the pattern of evolution and adaptation characteristic of
+previous phases of CMIP. To centre CMIP at the heart of activities within
+climate science and encourage links among activities within the World
+Climate Research Programme (WCRP), CMIP6 has been formulated scientifically
+around three specific questions, amidst the backdrop of the WCRP's seven
+Grand Science Challenges. To meet the increasingly broad scientific demands
+of the climate-science community, yet be responsive to the individual
+priorities and resource limitations of the modelling centres, CMIP has
+adopted a new, more federated organizational structure.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F4" specific-use="star"><caption><p>CMIP6 timeline for the preparation of forcings, the realization of
+experiments and their analysis.</p></caption>
+        <?xmltex \igopts{width=369.885827pt}?><graphic xlink:href="https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016-f04.png"/>
+
+      </fig>
+
+      <p>CMIP has now evolved from a centralized activity involving a large number of
+experiments to a federated activity, encompassing many individually designed
+MIPs. CMIP6 comprises 21 individual CMIP6-Endorsed MIPs and the DECK and
+CMIP6 historical simulations. Four of the 21 CMIP6-Endorsed MIPs are
+diagnostic in nature, meaning that they require additional output from
+models, but not additional simulations. The total amount of output from
+CMIP6 is estimated to be between 20 and 40 petabytes, depending on model
+resolution and the number of modelling centres ultimately participating in
+CMIP6. Questions addressed in the MIPs are wide ranging, from the climate of
+distant past to the response of turbulent cloud processes to radiative
+forcing, from how the terrestrial biosphere influences the uptake of
+CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> to how much predictability is stored in the ocean, from how to best
+project near-term to long-term future climate changes while considering
+interdependence and differences in model performance in the CMIP6 ensemble,
+and from what regulates the distribution of tropospheric ozone, to the
+influence of land-use changes on water availability.</p>
+      <p>The last 3 years have been dedicated to conceiving and then planning what
+we now call CMIP6. Starting in 2016, the first modelling centres are
+expected to begin performing the DECK and uploading output on the ESGF. Forcings
+for the DECK and CMIP6 historical simulations will be ready before mid-2016 so that
+these experiements can be started, and by the end of 2016 the diverse
+forcings for different scenarios of future human activity will become available.
+Past experience suggests that most centres will complete their CMIP simulations within a few years
+while the analysis of CMIP6 results will likely go on for a decade or more
+(Fig. 4).</p>
+      <p>Through an intensified effort to align CMIP with specific scientific
+questions and the WCRP Grand Science Challenges, we expect CMIP6 to continue
+CMIP's tradition of major scientific advances. CMIP6 simulations and
+scientific achievements are expected to support the IPCC Sixth Assessment
+Report (AR6) as well as other national and international climate assessments
+or special reports. Ultimately scientific progress on the most pressing
+problems of climate variability and change will be the best measure of the
+success of CMIP6.
+<?xmltex \hack{\newpage}?></p>
+<sec id="Ch1.S5.SSx1" specific-use="unnumbered">
+  <title>Data availability</title>
+      <p>The model output from the DECK and CMIP6 historical simulations described in
+this paper  will be distributed through the Earth System Grid Federation
+(ESGF) with digital object identifiers (DOIs) assigned. As in CMIP5, the
+model output will be freely accessible through data portals after
+registration. In order to document CMIP6's scientific impact and enable
+ongoing support of CMIP, users are obligated to acknowledge CMIP6, the
+participating modelling groups, and the ESGF centres (see details on the CMIP
+Panel website at
+<uri>http://www.wcrp-climate.org/index.php/wgcm-cmip/about-cmip</uri>). Further
+information about the infrastructure supporting CMIP6, the metadata
+describing the model output, and the terms governing its use are provided by
+the WGCM Infrastructure Panel (WIP) in their invited contribution to this
+special issue. Along with the data, the provenance of the data will be
+recorded, and DOIs will be assigned to collections of output so that they can
+be appropriately cited. This information will be made readily available so
+that published research results can be verified and credit can be given to
+the modelling groups providing the data. The WIP is coordinating and
+encouraging the development of the infrastructure needed to archive and
+deliver this information. In order to run the experiments, data sets for
+natural and anthropogenic forcings are required. These forcing data sets are
+described in separate invited contributions to this special issue. The
+forcing data sets will be made available through the ESGF with version
+control and DOIs assigned.</p><?xmltex \hack{\clearpage}?>
+</sec>
+</sec>
+
+      
+      </body>
+    <back><app-group>
+
+<app id="App1.Ch1.S1">
+  <title>Experiment specifications</title>
+<sec id="App1.Ch1.S1.SS1">
+  <title>Specifications for the DECK</title>
+      <p>Here we provide information needed to perform the DECK, including
+specification of forcing and boundary conditions, initialization procedures,
+and minimum length of runs. This information is largely consistent with but
+not identical to the specifications for these experiments in CMIP5
+(Taylor et al., 2009).</p>
+      <p>The DECK and CMIP6 historical simulations are requested from all models
+participating in CMIP. The expectation is that this requirement will be met
+for each model configuration used in the subsequent CMIP6-Endorsed MIPs (an
+entry card). For CMIP6, in the special case where the burden of the entry
+card simulations is prohibitive but the scientific case for including a
+particular model simulation is compelling (despite only partial completion
+of the entry card simulations), an exception to this policy can be granted
+on a model-by-model basis by the CMIP Panel, which will seek advice from the
+chairs of the affected CMIP6-Endorsed MIP.</p>
+      <p>CMIP6 is a cooperative effort across the international climate modelling and
+climate science communities. The modelling groups have all been involved in
+the design and implementation of CMIP6, and thus have agreed to a set of
+best practices proposed for CMIP6. Those best practices include having the
+modelling groups submit the DECK experiments and the CMIP6 historical
+simulations to the ESGF, as well as any CMIP6-Endorsed MIP experiments they
+choose to run. Additionally, the modelling groups decide what constitutes a
+new model version. The CMIP Panel will work with the MIP co-chairs and the
+modelling groups to ensure that these best practices are followed.</p>
+<sec id="App1.Ch1.S1.SS1.SSS1">
+  <title>AMIP simulation</title>
+      <p>As in the first simulations performed under the Atmospheric Model
+Intercomparison Project (AMIP, Gates et al., 1999), SSTs and SICs in AMIP experiments are prescribed consistent with
+observations (see details on this forcing data set in the corresponding
+contribution to this special issue). Land models should be configured as
+close as possible to the one used in the CMIP6 historical simulation including
+transient land use and land cover. Other external forcings including
+volcanic aerosols, solar variability, GHG concentrations, and anthropogenic
+aerosols should also be prescribed consistent with those used in the CMIP6
+historical simulation (see Sect. A2 below). Even though in AMIP
+simulations models with an active carbon cycle will not be fully
+interactive, surface carbon fluxes should be archived over land.</p>
+      <p>AMIP integrations can be initialized from prior model integrations or from
+observations or in other reasonable ways. Depending on the treatment of snow
+cover, soil water content, the carbon cycle, and vegetation, these runs may
+require a spin-up period of several years. One might establish
+quasi-equilibrium conditions consistent with the model by, for example,
+running with ocean conditions starting earlier in the 1970s or cycling
+repeatedly through year 1979 before simulating the official period. Results
+from the spin-up period (i.e. prior to 1979) should be discarded, but the
+spin-up technique should be documented.</p>
+      <p>For CMIP6, AMIP simulations should cover at least the period from January 1979
+through December 2014, but modelling groups are encouraged to extend
+their runs to the end of the observed period. Output may also be contributed
+from years preceding 1979 with the understanding that surface ocean
+conditions were less complete and in some cases less reliable then.</p>
+      <p>The climate found in AMIP simulations is largely determined by the
+externally imposed forcing, especially the ocean conditions. Nevertheless,
+unforced variability (noise) within the atmosphere introduces some
+non-deterministic variations that hamper unambiguous interpretation of
+apparent relationships between, for example, the year-to-year anomalies in
+SSTs and their consequences over land. To assess the role of unforced
+atmospheric variability in any particular result, modelling groups are
+encouraged to generate an ensemble of AMIP simulations. For most studies, a
+three-member ensemble, where only the initial conditions are varied, would
+be the minimum required, with larger size ensembles clearly of value in
+making more precise determination of statistical significance.</p>
+</sec>
+<sec id="App1.Ch1.S1.SS1.SSS2">
+  <title>Multi-century pre-industrial control simulations</title>
+      <p>Like laboratory experiments, numerical experiments are designed to reveal
+cause and effect relationships. A standard way of doing this is to perform
+both a control experiment and a second experiment where some
+externally imposed experiment condition has been altered. For many CMIP
+experiments, including the rest of the experiments discussed in this
+Appendix, the control is a simulation with atmospheric composition and
+other conditions prescribed and held constant, consistent with best
+estimates of the forcing from the historical period.</p>
+      <p>Ideally the pre-industrial control (<italic>piControl</italic>) experiment for CMIP would represent a
+near-equilibrium state of the climate system under the imposed conditions.
+In reality, simulations of hundreds to many thousands of years would be
+required for the ocean's depths to equilibrate and for biogeochemical
+reservoirs to fully adjust. Available computational resources generally
+preclude integrations long enough to approach equilibrium, so in practice
+shorter runs must suffice. Usually, a <italic>piControl</italic> simulation is initialized from the
+control run of a different model or from observations, and then run until at
+least the surface climate conditions stabilize using 1850 forcings (see
+Stouffer et al., 2004, for further discussion). This spin-up
+period can be as long as several hundred years and variables that can
+document the spin-up behaviour should be archived (under the experiment
+labels <italic>piControl-spinup</italic> or <italic>esm-piControl-spinup</italic>). At the very least the length of the spin-up period should be
+documented.</p>
+      <p>Although equilibrium is generally not achieved, the changes occurring after
+the spin-up period are usually found to evolve at a fairly constant rate
+that presumably decreases slowly as equilibrium is approached. After a few
+centuries, these drifts of the system mainly affect the carbon cycle and
+ocean below the main thermocline, but they are also manifest at the surface
+in a slow change in sea level. The climate drift must be removed in order to
+interpret experiments that use the pre-industrial simulation as a control.
+The usual procedure is to assume that the drift is insensitive to CMIP
+experiment conditions and to simply subtract the control run from the
+perturbed run to determine the climate change that would occur in the
+absence of drift.</p>
+      <p>Besides serving as controls for numerical experimentation, the
+<italic>piControl</italic> and <italic>esm-piControl</italic> are used to study the naturally occurring, unforced variability of the
+climate system. The only source of climate variability in a control arises
+from processes internal to the model, whereas in the more complicated real
+world, variations are also caused by external forcing factors such as solar
+variability and changes in atmospheric composition caused, for example, by
+human activities or volcanic eruptions. Consequently, the physical processes
+responsible for unforced variability can more easily be isolated and studied
+using the control run of models, rather than by analysing observations.</p>
+      <p>A DECK control simulation is required to be long enough to extend to the end
+of any perturbation runs initiated from it so that climate drift can be
+assessed and possibly removed from those runs. If, for example, a historical
+simulation (beginning in 1850) were initiated from the beginning of the
+control simulation and then were followed by a future scenario run extending
+to year 2300, a control run of at least 450 years would be required. As
+discussed above, control runs are also used to assess model-simulated
+unforced climate variability. The longer the control, the more precisely can
+variability be quantified for any given timescale. A control simulation of
+many hundreds of years would be needed to assess variability on centennial
+timescales. For CMIP6 it is recommended that the control run should be at
+least 500 years long (following the spin-up period), but of course the
+simulation must be long enough to reach to the end of the experiments it
+spawns. It should be noted that those analysing CMIP6 simulations might also
+require simulations longer than 500 years to accurately assess unforced
+variability on long timescales, so modelling groups are encouraged to
+extend their control runs well beyond the minimum recommended number of
+years.</p>
+      <p>Because the climate was very likely not in equilibrium with the forcing of
+1850 and because different components of the climate system differentially
+respond to the effects of the forcing prior to that time, there is some
+ambiguity in deciding on what forcing to apply for the control. For CMIP6 we
+recommend a specification of this forcing that attempts to balance
+conflicting objectives to
+<list list-type="bullet"><list-item>
+      <p>minimize artificial climate responses to discontinuities in radiative
+forcing at the time a historical simulation is initiated, and</p></list-item><list-item>
+      <p>minimize artefacts in sea level change due to thermal expansion caused by
+unrealistic mismatches in conditions in the centennial-scale averaged
+forcings for the pre- and post-1850 periods. Note that any preindustrial
+multi-centennial observed trend in global-mean sea level is most likely to
+be due to slow changes in ice-sheets, which are likely not to be simulated
+in the CMIP6 model generation.</p></list-item></list>
+The first consideration above implies that radiative forcing in the control
+run should be close to that imposed at the beginning of the CMIP historical
+simulation (i.e. 1850). The second implies that a background volcanic
+aerosol and time-averaged solar forcing should be prescribed in the control
+run, since to neglect it would cause an apparent drift in sea level
+associated with the suppression of heat uptake due to the net effect of, for
+instance, volcanism after 1850, and this has implications for sea level
+changes (Gregory, 2010; Gregory et al., 2013). We recognize that it will
+be impossible to entirely avoid artefacts and artificial transient effects,
+and practical considerations may rule out conformance with every detail of
+the control simulation protocol stipulated here. With that understanding,
+here is a summary of the recommendations for the imposed conditions on the
+spin-up and control runs, followed by further clarification in subsequent
+paragraphs:
+<list list-type="bullet"><list-item>
+      <p>Conditions must be time invariant except for those associated with the mean
+climate (notably the seasonal and diurnal cycles of insolation).</p></list-item><list-item>
+      <p>Unless indicated otherwise (e.g. the background volcanic forcing),
+experiment conditions (e.g. greenhouse gas concentrations, ozone
+concentration, surface land conditions) should be representative of Earth
+around the year 1850.</p></list-item><list-item>
+      <p>Orbital parameters (eccentricity, obliquity, and longitude of the
+perihelion) should be held fixed at their 1850 values.</p></list-item><list-item>
+      <p>Land use should not change in the control run and should be fixed according
+to reconstructed agricultural maps from 1850. Due to the diversity of model
+approaches in ESMs for land carbon, some groups might deviate from this
+specification, and again this must be clearly documented.</p></list-item><list-item>
+      <p>The solar constant should be fixed at its mean value (no 11-year solar
+cycle) over the first two solar cycles of the historical simulation (i.e.
+the 1850–1873 mean).</p></list-item><list-item>
+      <p>A background volcanic aerosol should be specified that results in radiative
+forcing matching, as closely as possible, that experienced, on average,
+during the historical simulation (i.e. 1850–2014 mean).</p></list-item><list-item>
+      <p>Models without interactive ozone chemistry should specify the pre-industrial
+ozone fields from a data set produced from a pre-industrial control
+simulation that uses 1850 emissions and a mean solar forcing averaged over
+solar cycles 8–10, representative of the mean mid-19th century solar
+forcing.</p></list-item><list-item>
+      <p>For models with interactive chemistry and/or aerosols, the CMIP6 pre-industrial
+emissions dataset of reactive gases and aerosol precursors should be used. For models
+without internally calculated aerosol concentrations, a monthly climatological dataset
+of aerosol physical and optical properties should be used.</p></list-item></list>
+In the CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>-concentration-driven <italic>piControl</italic>, the value of the global annual mean 1850 atmospheric CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration is prescribed and held fixed during the entire experiment. There are some special considerations that apply to control simulations
+performed by emission-driven ESMs (i.e. runs with atmospheric
+concentrations of CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> calculated prognostically rather than being
+prescribed). In the <italic>esm-piControl</italic> simulation, emissions of CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> from both fossil fuel
+combustion and land-use change are prescribed to be zero. In this run any
+residual drift in atmospheric CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration that arises from an
+imbalance in the exchanges of CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> between the atmosphere and the ocean
+and land (i.e. by the natural carbon cycle in the absence of anthropogenic
+CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> emissions) will need to be subtracted from perturbation runs to
+correct for a control state not in equilibrium. It should be emphasized that
+the <italic>esm-piControl</italic> is an idealized experiment and is not meant to mimic the true 1850
+conditions, which would have to include a source of carbon of around 0.6 Pg C yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula> from the already perturbed state that existed in 1850.</p>
+      <p>Due to a wide variety of ESMs and the techniques they use to compute land
+carbon fluxes, it is hard to make statements that apply to all models
+equally well. A general recommendation, however, is that the land carbon
+fluxes in the emission and concentration-driven control simulations should
+be stable in time and in approximate balance so that the net carbon flux
+into the atmosphere is small (less than 0.1 Pg C yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula>). Further details on ESM
+experiments with a carbon cycle are provided in the C<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mn mathvariant="normal">4</mml:mn></mml:msup></mml:math></inline-formula>MIP contribution
+to this special issue.</p>
+      <p>The historical time-average volcanic forcing stipulated above for the
+control run is likely to approximate the much longer term mean.
+The volcanic aerosol radiative forcing estimates of Crowley (2000) for the historical
+period and the last millennium are <inline-formula><mml:math display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>0.18 and <inline-formula><mml:math display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>0.22 W m<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">2</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula>,
+respectively. Because the mean volcanic forcing between 1850 and 2014 is
+small, the discontinuity associated with transitioning from a mean forcing
+to a time-varying volcanic forcing is also expected to be small. Even though
+this is the design objective, it is likely that it will be impossible to
+eliminate all artefacts in quantities such as historical sea level change.
+For this reason, and because some models may deviate from these
+specifications, it is recommended that groups perform an additional
+simulation of the historical period but with only natural forcing included.
+With this additional run, which is already called for under DAMIP, the
+purely anthropogenic effects on sea level change can be isolated.</p>
+      <p>The forcing specified in the <italic>piControl</italic> also has implications for simulations of the
+future, when solar variability and volcanic activity will continue to exist,
+but at unknown levels. These issues need to be borne in mind when designing
+and evaluating future scenarios, as a failure to include volcanic forcing in
+the future will cause future warming and sea level rise to be over-estimated
+relative to a <italic>piControl</italic> experiment in which a non-zero volcanic forcing is specified.
+This is accounted for by introducing a time-invariant non-zero volcanic
+forcing (e.g. the mean volcanic forcing for the <italic>piControl</italic>) into the scenarios. This
+is further specified in the ScenarioMIP contribution to this special issue.</p>
+      <p>These issues, and the potential of different modelling centres adopting
+different approaches to account for their particular constraints, highlight
+the paramount importance of adequately documenting the conditions under
+which this and the other DECK experiments are performed.</p>
+</sec>
+<sec id="App1.Ch1.S1.SS1.SSS3">
+  <?xmltex \opttitle{Abruptly quadrupling CO${}_{{2}}$ simulation}?><title>Abruptly quadrupling CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> simulation</title>
+      <p>Until CMIP5, there were no experiments designed to quantify the extent to
+which forcing differences might explain differences in climate response. It
+was also difficult to diagnose and quantify the feedback responses, which
+are mediated by global surface temperature change (Sherwood et al.,
+2015). In order to examine these fundamental characteristics of models –
+CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> forcing and climate feedback – an abrupt 4<inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula>CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> simulation was
+included for the first time as part of CMIP5. Following
+Gregory et al. (2004), the simulation branches in
+January of the CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>-concentration-driven <italic>piControl</italic> and
+abruptly the value of the global annual mean 1850 atmospheric CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration
+that is prescribed in <italic>piControl</italic> is quadrupled and held fixed. As the system
+subsequently evolves toward a new equilibrium, the imbalance in the net flux
+at the top of the atmosphere can be plotted against global temperature
+change. As Gregory et al. (2004) showed, it is then
+possible to diagnose both the effective radiative forcing due to a
+quadrupling of CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> and also effective equilibrium climate sensitivity
+(ECS). Moreover, by examining how individual flux components evolve with
+surface temperature change, one can learn about the relative strengths of
+different feedback, notably quantifying the importance of various feedback
+associated with clouds.</p>
+      <p>In the <italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic> experiment, the only externally imposed difference from the
+<italic>piControl</italic> should be the change in CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration. All other conditions should
+remain as they were in the <italic>piControl</italic>, including any background volcanic aerosols. By
+changing only a single factor, we can unambiguously attribute all climatic
+consequences to the increase in CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration.</p>
+      <p>The minimum length of the  simulation should be 150 years, but longer
+simulations would enable investigations of longer-timescale responses. Also
+there is value, as in CMIP5, in performing an ensemble of short
+(<inline-formula><mml:math display="inline"><mml:mo>∼</mml:mo></mml:math></inline-formula> 5-year) simulations, all prescribing global annual mean 1850
+atmospheric CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration but initiated at different times throughout
+the year (in addition to the <italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic> simulation initiated from the <italic>piControl</italic> in January). Such an ensemble would
+reduce the statistical uncertainty with which the effective CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+radiative forcing could be quantified and would allow more detailed and
+accurate diagnosis of the fast responses of the system under an abrupt
+change in forcing (Bony et al., 2013; Gregory and Webb, 2008; Kamae and
+Watanabe, 2013; Sherwood et al., 2015). Different groups will be able to
+afford ensembles of different sizes, but in any case each realization should
+be initialized in a different month and the months should be spaced evenly
+throughout the year.</p>
+</sec>
+<sec id="App1.Ch1.S1.SS1.SSS4">
+  <?xmltex \opttitle{1\,{\%} CO${}_{{2}}$ increase simulation}?><title>1 % CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> increase simulation</title>
+      <p>The second idealized climate change experiment was introduced in the early
+days of CMIP (Meehl et al., 2000). It is designed for
+studying model responses under simplified but somewhat more realistic
+forcing than an abrupt increase in CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>. In this <italic>1pctCO2</italic> experiment, the
+simulation is branched from the <italic>piControl</italic>, and the global annual mean CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration is gradually
+increased at a rate of 1 % yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula> (i.e. exponentially), starting from its 1850 value that is prescribed in the <italic>piControl</italic>. A minimum
+length of 150 years is requested so that the simulation goes beyond the
+quadrupling of CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> after 140 years. Note that in contrast to previous
+definitions, the experiment has been simplified so that the 1 % CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+increase per year is applied throughout the entire simulation rather than
+keeping it constant after 140 years as in CMIP5. Since the radiative forcing
+is approximately proportional to the logarithm of the CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> increase, the
+radiative forcing linearly increases over time. Drawing on the estimates of
+effective radiative forcing (for definitions see Myhre et al., 2013) obtained in the
+<italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic> simulations, analysts can scale results from each model in the 1 %
+CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> increase simulations to focus on the response differences in
+models, largely independent of their forcing differences. In contrast, in
+CMIP6 historical simulations (see Sect. A2), the forcing and response
+contributions to model differences in simulated climate change cannot be
+easily isolated.</p>
+      <p>As in the <italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic> experiment, the only externally imposed difference from the
+<italic>piControl</italic> should be the change in CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration. The omission of changes in
+aerosol concentrations is the key to making these simulations easier to
+interpret.</p>
+      <p>Models with a carbon cycle component will be driven by prescribed CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+concentrations, but terrestrial and marine surface fluxes and stores of
+carbon will become a key diagnostic from which one can infer emission rates
+that are consistent with a 1 % yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula> increase in model CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>
+concentration. This DECK baseline carbon cycle experiment is built upon in
+C<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mn mathvariant="normal">4</mml:mn></mml:msup></mml:math></inline-formula>MIP to diagnose the strength of model carbon climate feedback and to
+quantify contributions to disruption of the carbon cycle by climate and by
+direct effects of increased CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration.</p>
+</sec>
+</sec>
+<sec id="App1.Ch1.S1.SS2">
+  <title>The CMIP6 historical simulations</title>
+      <p>CMIP6 historical simulations of climate change over the period 1850–2014
+are forced by common data sets that are largely based on observations.
+They serve as an important benchmark for assessing model performance through
+evaluation against observations. The historical integration should be
+initialized from some point in the control integration (with <italic>historical</italic> branching from
+the <italic>piControl</italic> and the <italic>esm-hist</italic> branching from <italic>esm-piControl</italic>) and be forced by varying time,
+externally imposed conditions that are based on observations. Both
+naturally forced changes (e.g. due to solar variability and volcanic
+aerosols) and changes due to human activities (e.g. CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration,
+aerosols, and land use) will lead to climate variations and evolution. In
+addition, there is unforced variability which can obscure the forced changes
+and lead to expected differences between the simulated and observed climate
+variations (Deser et al., 2012).</p>
+      <p>The externally imposed forcing data sets that should be used in CMIP6 cover
+the period 1850 through the end of 2014 and are described in detail in various
+other contributions to this special issue. In the CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>-concentration-driven historical simulations, time-varying global
+annual mean concentrations for CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> and other long-lived greenhouse gases are
+prescribed. If a modelling center decides to represent additional spatial and
+seasonal variations in prescribed greenhouse gas forcings, this needs to be
+adequately documented.</p>
+      <p>Recall from Sect. A1.2 that the
+conditions in the control should generally be consistent with the forcing
+imposed near the beginning of the CMIP historical simulation. This should
+minimize artificial transient effects in the first portion of the CMIP
+historical simulation. An exception is that for the CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>-emission-driven
+experiments, the zero CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> emissions from fossil fuel and the land-use
+specifications for 1850 in the <italic>esm-piControl</italic> could cause a discontinuity in land carbon
+at the branch point.</p>
+
+<?xmltex \floatpos{t}?><table-wrap id="App1.Ch1.T1" specific-use="star"><caption><p>Specifications in the DECK and CMIP6 historical simulations.</p></caption><oasis:table frame="topbot"><?xmltex \begin{scaleboxenv}{.98}[.98]?><oasis:tgroup cols="4">
+     <oasis:colspec colnum="1" colname="col1" align="left"/>
+     <oasis:colspec colnum="2" colname="col2" align="justify" colwidth="142.26378pt"/>
+     <oasis:colspec colnum="3" colname="col3" align="justify" colwidth="113.811024pt"/>
+     <oasis:colspec colnum="4" colname="col4" align="justify" colwidth="147.954331pt"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">Experiment</oasis:entry>  
+         <oasis:entry colname="col2">Volcanic stratospheric aerosol</oasis:entry>  
+         <oasis:entry colname="col3">Solar variability</oasis:entry>  
+         <oasis:entry colname="col4">Anthropogenic forcings</oasis:entry>
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1"><italic>amip</italic></oasis:entry>  
+         <oasis:entry colname="col2">Time-dependent observations</oasis:entry>  
+         <oasis:entry colname="col3">Time-dependent observations</oasis:entry>  
+         <oasis:entry colname="col4">Time-dependent observations</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1"><italic>piControl</italic></oasis:entry>  
+         <oasis:entry colname="col2">Background volcanic aerosol that <?xmltex \hack{\hfill\break}?>results in radiative forcing matching, as <?xmltex \hack{\hfill\break}?>closely as possible, that was experienced, on average, during the historical simulation (i.e. 1850–2014 mean)</oasis:entry>  
+         <oasis:entry colname="col3">Fixed at its mean value (no <?xmltex \hack{\hfill\break}?>11-year solar cycle) over the <?xmltex \hack{\hfill\break}?>first two solar cycles of the <?xmltex \hack{\hfill\break}?>historical simulation (i.e. the <?xmltex \hack{\hfill\break}?>1850–1873 mean)</oasis:entry>  
+         <oasis:entry colname="col4">Given that the historical simulations <?xmltex \hack{\hfill\break}?>start in 1850, the <italic>piControl</italic> should have <?xmltex \hack{\hfill\break}?>fixed 1850 atmospheric composition, <?xmltex \hack{\hfill\break}?>not true pre-industrial</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1"><italic>esm-piControl</italic></oasis:entry>  
+         <oasis:entry colname="col2">As in <italic>piControl</italic></oasis:entry>  
+         <oasis:entry colname="col3">As in <italic>piControl</italic></oasis:entry>  
+         <oasis:entry colname="col4">As in <italic>piControl</italic> but with CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concen- <?xmltex \hack{\hfill\break}?>tration calculated, rather than prescribed. <?xmltex \hack{\hfill\break}?>CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> from both fossil fuel combustion <?xmltex \hack{\hfill\break}?>and land-use change are prescribed to be <?xmltex \hack{\hfill\break}?>zero.</oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1"><italic>abrupt-4</italic><inline-formula><mml:math display="inline"><mml:mo>×</mml:mo></mml:math></inline-formula><italic>CO2</italic></oasis:entry>  
+         <oasis:entry colname="col2">As in <italic>piControl</italic></oasis:entry>  
+         <oasis:entry colname="col3">As in <italic>piControl</italic></oasis:entry>  
+         <oasis:entry colname="col4">As in <italic>piControl </italic>except CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> that is 4 <?xmltex \hack{\hfill\break}?>times that of <italic>piControl</italic></oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1"><italic>1pctCO2</italic></oasis:entry>  
+         <oasis:entry colname="col2">As in <italic>piControl</italic></oasis:entry>  
+         <oasis:entry colname="col3">As in <italic>piControl</italic></oasis:entry>  
+         <oasis:entry colname="col4">As in <italic>piControl </italic>except CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> that is <?xmltex \hack{\hfill\break}?>increasing at 1 % yr<inline-formula><mml:math display="inline"><mml:msup><mml:mi/><mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula></oasis:entry>
+       </oasis:row>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1"><italic>historical</italic></oasis:entry>  
+         <oasis:entry colname="col2">Time-dependent observations</oasis:entry>  
+         <oasis:entry colname="col3">Time-dependent observations</oasis:entry>  
+         <oasis:entry colname="col4">Time-dependent observations</oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><italic>esm-hist</italic></oasis:entry>  
+         <oasis:entry colname="col2">As in <italic>historical</italic></oasis:entry>  
+         <oasis:entry colname="col3">As in <italic>historical</italic></oasis:entry>  
+         <oasis:entry colname="col4">As in <italic>historical</italic> but with CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> emissions <?xmltex \hack{\hfill\break}?>prescribed and CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> concentration calcu- <?xmltex \hack{\hfill\break}?>lated (rather than prescribed)</oasis:entry>
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup><?xmltex \end{scaleboxenv}?></oasis:table></table-wrap>
+
+      <p>As described in Sect. A1.2, the 1850 <italic>esm-piControl</italic> should be developed for an idealized
+case that is stable in time and balance so that the net carbon flux into the
+atmosphere is small. Meanwhile, the start of the <italic>esm-hist</italic> in 1850 should be as
+realistic as possible and attempt to account for the fact the land surface
+was not in equilibrium in 1850 due to prior land-use effects (Houghton,
+2010; Hurtt et al., 2011). Some modelling groups have developed methods to
+achieve these twin goals in a computationally efficient manner, for example,
+by performing pre-1850 off-line land model simulations to account for the
+land carbon cycle disequilibrium before 1850 and to adequately simulate
+carbon stores at the start of the historical simulation (Sentman
+et al., 2011). Due to the wide diversity of modelling approaches for land
+carbon in the ESMs, the actual method applied by each group to account for
+these effects will differ and needs to be well documented.</p>
+      <p>As discussed earlier, there will be a mismatch in the specification of
+volcanic aerosols between control and historical simulations that especially
+affect estimates of ocean heat uptake and sea level rise in the historical
+period. This can be minimized by prescribing a background volcanic aerosol
+in the pre-industrial control that has the same cooling effect as the
+volcanoes included in the CMIP6 historical simulation. Any residual mismatch
+will need to be corrected, which requires a special supplementary simulation
+(see Sect. A1.2) that should be submitted along with the CMIP6 historical
+simulation.</p>
+      <p>For model evaluation and for detection and attribution studies (the focus of
+DAMIP) there would be considerable value in extending the CMIP6 historical
+simulations beyond the nominal 2014 ending date. To include the more recent
+observations in model evaluation, modelling groups are encouraged to
+document and apply forcing data sets representing the post-2014 period. For
+short extensions (up to a few years) it may be acceptable to simply apply
+forcing from one of the future scenarios defined by ScenarioMIP. To
+distinguish between the portion of the historical period when all models
+will use the same forcing data sets (i.e. 1850–2014) from the extended
+period where different data sets might be used, the experiment for 1850–2014
+will be labelled <italic>historical</italic> (<italic>esm-hist</italic> in the case of the emission-driven run)
+and the period from 2015 through near-present will likely be labelled
+<italic>historical-ext</italic> (<italic>esm-hist-ext</italic>).</p>
+      <p>Even if the CMIP6 historical simulations are extended beyond 2014, all
+future scenario simulations (called for by ScenarioMIP and other MIPs)
+should be initiated from the end of year 2014 of the CMIP6 historical
+simulation since the “future” in CMIP6 begins in 2015.</p>
+      <p>Due to interactions within and between the components of the Earth system,
+there is a wide range of variability on various time and space scales
+(Hegerl et al., 2007). The timescales  vary
+from shorter than a day to longer than several centuries. The magnitude of
+the variability can be quite large relative to any given signal of interest
+depending on the time and space scales involved and on the variable of
+interest. To more clearly identify forced signals emerging from natural
+variability, multiple model integrations (comprising an ensemble) can be
+made where only the initial conditions are perturbed in some way which
+should be documented. A common way to do this is to simply branch each
+simulation from a different point in the control run. Longer intervals
+between branch points will ensure independence of ensemble members on longer
+timescales. By averaging many different ensemble members together, the
+signal of interest becomes clear because the natural variations tend to
+average out if the ensemble size and averaging period are long enough. If
+the variability in the models is realistic, then the spread of the ensemble
+members around the ensemble average is caused by unforced (i.e. internal)
+variability. To minimize the number of years included in the entry card
+simulations, only one ensemble member is requested here. However, we
+strongly encourage model groups to submit at least three ensemble members of
+their CMIP historical simulation as requested in DAMIP.</p><?xmltex \hack{\clearpage}?>
+</sec>
+</app>
+  </app-group><ack><title>Acknowledgements</title><p>We thank the scientific community for their engagement in the definition of
+CMIP6 and for the broad participation in the CMIP5 survey in 2013. We thank
+the co-chairs and steering committee members of the CMIP6-Endorsed MIPs for
+their continuous engagement in defining CMIP6, and the modelling groups and
+wider community for reviewing the CMIP6 design and organization. We thank the
+WGCM Infrastructure Panel (WIP) for overseeing the CMIP6 infrastructure,
+Martin Juckes for taking the lead in preparing the CMIP6 data request,
+and the group of scientists who are producing forcing datasets for CMIP6. Thanks to Jonathan Gregory for raising awareness about the treatment of volcanic
+forcing in the pre-industrial control experiment and its consequence for sea
+level changes, and to Pierre Friedlingstein, George Hurtt, Chris Jones, and
+David Lawrence for help in defining carbon cycle and land-use specifications
+in the DECK experiments and CMIP6 historical simulations. Norbert Noreiks is
+thanked for help in drafting the figures. Thanks to our topical editor Julia Hargreaves,
+to Gavin Schmidt and the other two anonymous reviewers, and to
+everyone who contributed to the open discussions for constructive comments.
+GM and KET were supported by the Regional and Global Climate Modeling Program
+(RGCM) of the U.S. Department of Energy's Office of Biological &amp;
+Environmental Research (BER) (through Cooperative Agreement no.
+DE-FC02-97ER62402 for GM), and GM received additional support from the U.S.
+National Science Foundation. The National Center for Atmospheric Research is
+sponsored by the National Science Foundation.<?xmltex \hack{\newline}?><?xmltex \hack{\newline}?>
+The article processing charges
+for this open-access <?xmltex \hack{\newline}?> publication were covered by a Research
+<?xmltex \hack{\newline}?> Centre of the Helmholtz Association.<?xmltex \hack{\newline}?><?xmltex \hack{\newline}?>
+Edited by: J. Hargreaves</p></ack><ref-list>
+    <title>References</title>
+
+      <ref id="bib1.bib1"><label>1</label><mixed-citation>
+Bony, S., Bellon, G., Klocke, D., Sherwood, S., Fermepin, S., and Denvil,
+S.: Robust direct effect of carbon dioxide on tropical circulation and
+regional precipitation, Nat. Geosci., 6, 447–451, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib2"><label>2</label><mixed-citation>
+Bony, S., Stevens, B., Frierson, D. M. W., Jakob, C., Kageyama, M., Pincus,
+R., Shepherd, T. G., Sherwood, S. C., Siebesma, A. P., Sobel, A. H.,
+Watanabe, M., and Webb, M. J.: Clouds, circulation and climate sensitivity,
+Nat. Geosci., 8, 261–268, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib3"><label>3</label><mixed-citation>Brasseur, G. and Carlson, D.: Future directions for the World Climate
+Research Programme, Eos, Transactions American Geophysical Union, 96,
+<ext-link xlink:href="http://dx.doi.org/10.1029/2015EO033577" ext-link-type="DOI">10.1029/2015EO033577</ext-link>,
+2015.</mixed-citation></ref>
+      <ref id="bib1.bib4"><label>4</label><mixed-citation>CMIP Panel:  WCRP Coupled Model Intercomparison Project (CMIP), available
+at: <uri>http://www.wcrp-climate.org/index.php/wgcm-cmip/about-cmip</uri>, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib5"><label>5</label><mixed-citation>
+Crowley, T. J.: Causes of climate change over the past 1000 years, Science, 289, 270–277, 2000.</mixed-citation></ref>
+      <ref id="bib1.bib6"><label>6</label><mixed-citation>
+Cubasch, U., Wuebbles, D., Chen, D., Facchini, M. C., Frame, D., Mahowald, N., and
+Winther, J.-G.: Introduction, in: Climate Change 2013: The Physical Science
+Basis. Contribution of Working Group I to the Fifth Assessment Report of the
+Intergovernmental Panel on Climate Change, edited by: Stocker, T. F., Qin, D.,
+Plattner, G.-K., Tignor, M., Allen, S. K., Boschung, J., Nauels, A., Xia, Y.,
+Bex, V., and Midgley, P. M., Cambridge University Press, Cambridge, UK and
+New York, NY, USA, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib7"><label>7</label><mixed-citation>
+Deser, C., Knutti, R., Solomon, S., and Phillips, A. S.: Communication of the
+role of natural variability in future North American climate, Nat. Clim.
+Change, 2, 775–779, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib8"><label>8</label><mixed-citation>Eyring, V., Righi, M., Lauer, A., Evaldsson, M., Wenzel, S., Jones, C., Anav, A., Andrews, O., Cionni, I., Davin,
+E. L., Deser, C., Ehbrecht, C., Friedlingstein, P., Gleckler, P., Gottschaldt, K.-D., Hagemann, S.,
+Juckes, M., Kindermann, S., Krasting, J., Kunert, D., Levine, R., Loew, A., Mäkelä, J., Martin, G.,
+Mason, E., Phillips, A. S., Read, S., Rio, C., Roehrig, R., Senftleben, D., Sterl, A., van Ulft, L. H., Walton, J., Wang, S., and Williams,
+K. D.: ESMValTool (v1.0) – a community diagnostic and performance metrics tool for routine evaluation of
+Earth system models in CMIP, Geosci. Model Dev., 9, 1747–1802, <ext-link xlink:href="http://dx.doi.org/10.5194/gmd-9-1747-2016" ext-link-type="DOI">10.5194/gmd-9-1747-2016</ext-link>, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib9"><label>9</label><mixed-citation>Ferraro, R., Waliser, D. E., Gleckler, P., Taylor, K. E., and Eyring, V.:
+Evolving obs4MIPs to Support the Sixth Coupled Model Intercomparison Project
+(CMIP6), B. Am. Meteorol. Soc., <ext-link xlink:href="http://dx.doi.org/10.1175/BAMS-D-14-00216.1" ext-link-type="DOI">10.1175/BAMS-D-14-00216.1</ext-link>, online
+first,
+2015.</mixed-citation></ref>
+      <ref id="bib1.bib10"><label>10</label><mixed-citation>
+Flato, G., Marotzke, J., Abiodun, B., Braconnot, P., Chou, S. C., Collins,
+W., Cox, P., Driouech, F., Emori, S., Eyring, V., Forest, C., Gleckler, P.,
+Guilyardi, E., Jakob, C., Kattsov, V., Reason, C., and Rummukainen, M.:
+Evaluation of Climate Models, in: Climate Change 2013: The Physical Science
+Basis. Contribution of Working Group I to the Fifth Assessment Report of the
+Intergovernmental Panel on Climate Change, edited by: Stocker, T. F., Qin,
+D., Plattner, G.-K., Tignor, M., Allen, S. K., Boschung, J., Nauels, A., Xia,
+Y., Bex, V., and Midgley, P. M., Cambridge University Press, Cambridge, UK
+and New York, NY, USA, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib11"><label>11</label><mixed-citation>
+Gates, W. L., Boyle, J. S., Covey, C., Dease, C. G., Doutriaux, C. M., Drach,
+R. S., Fiorino, M., Gleckler, P. J., Hnilo, J. J., Marlais, S. M., Phillips,
+T. J., Potter, G. L., Santer, B. D., Sperber, K. R., Taylor, K. E., and
+Williams, D. N.: An Overview of the Results of the Atmospheric Model
+Intercomparison Project (AMIP I), B. Am. Meteorol. Soc., 80, 29–55, 1999.</mixed-citation></ref>
+      <ref id="bib1.bib12"><label>12</label><mixed-citation>
+Geoffroy, O., Saint-Martin, D., Olivie, D. J. L., Voldoire, A., Bellon, G.,
+and Tyteca, S.: Transient Climate Response in a Two-Layer Energy-Balance
+Model. Part I: Analytical Solution and Parameter Calibration Using CMIP5
+AOGCM Experiments, J. Climate, 26, 1841–1857, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib13"><label>13</label><mixed-citation>Gleckler, P. J., Doutriaux, C., Durack P. J., Taylor K. E., Zhang, Y.,
+Williams, D. N., Mason, E., and Servonnat, J.: A More Powerful Reality Test
+for Climate Models, Eos Trans. AGU, <ext-link xlink:href="http://dx.doi.org/10.1029/2016EO051663" ext-link-type="DOI">10.1029/2016EO051663</ext-link>, 2016.</mixed-citation></ref>
+      <ref id="bib1.bib14"><label>14</label><mixed-citation>Gregory, J. and Webb, M.: Tropospheric adjustment induces a cloud component
+in CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> forcing, J. Climate, 21, 58–71, 2008.</mixed-citation></ref>
+      <ref id="bib1.bib15"><label>15</label><mixed-citation>Gregory, J. M.: Long-term effect of volcanic forcing on ocean heat content,
+Geophys. Res. Lett., 37, L22701, <ext-link xlink:href="http://dx.doi.org/10.1029/2010gl045507" ext-link-type="DOI">10.1029/2010gl045507</ext-link>, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib16"><label>16</label><mixed-citation>Gregory, J. M., Ingram, W. J., Palmer, M. A., Jones, G. S., Stott, P. A.,
+Thorpe, R. B., Lowe, J. A., Johns, T. C., and Williams, K. D.: A new method
+for diagnosing radiative forcing and climate sensitivity, Geophys. Res.
+Lett., 31, L03205, <ext-link xlink:href="http://dx.doi.org/10.1029/2003gl018747" ext-link-type="DOI">10.1029/2003gl018747</ext-link>, 2004.</mixed-citation></ref>
+      <ref id="bib1.bib17"><label>17</label><mixed-citation>
+Gregory, J. M., Bi, D., Collier, M. A., Dix, M. R., Hirst, A. C., Hu, A.,
+Huber, M., Knutti, R., Marsland, S. J., Meinshausen, M., Rashid, H. A.,
+Rotstayn, L. D., Schurer, A., and Church, J. A.: Climate models without
+preindustrial volcanic forcing underestimate historical ocean thermal
+expansion, Geophys. Res. Lett., 40, 1600–1604, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib18"><label>18</label><mixed-citation>
+Hegerl, G. C., Zwiers, F. W., Braconnot, P., Gillett, N. P., Luo, Y., Marengo
+Orsini, J. A., Nicholls, N., Penner, J. E., and Stott, P. A.: Understanding
+and Attributing Climate Change, in: Climate Change 2007: The Physical Science
+Basis. Contribution of Working Group I to the Fourth Assessment Report of the
+Intergovernmental Panel on Climate Change, edited by: Solomon, S., Qin, D.,
+Manning, M., Chen, Z., Marquis, M., Averyt, K. B., Tignor, M., and Miller, H.
+L., Cambridge University Press, Cambridge, UK and New York, NY, USA, 2007.</mixed-citation></ref>
+      <ref id="bib1.bib19"><label>19</label><mixed-citation>Houghton, R. A.: How well do we know the flux of CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula> from land-use
+change?, Tellus B, 62, 337–351, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib20"><label>20</label><mixed-citation>
+Hurtt, G. C., Chini, L. P., Frolking, S., Betts, R. A., Feddema, J., Fischer,
+G., Fisk, J. P., Hibbard, K., Houghton, R. A., Janetos, A., Jones, C. D.,
+Kindermann, G., Kinoshita, T., Goldewijk, K. K., Riahi, K., Shevliakova, E.,
+Smith, S., Stehfest, E., Thomson, A., Thornton, P., van Vuuren, D. P., and
+Wang, Y. P.: Harmonization of land-use scenarios for the period 1500–2100:
+600 years of global gridded annual land-use transitions, wood harvest, and
+resulting secondary lands, Climatic Change, 109, 117–161, 2011.</mixed-citation></ref>
+      <ref id="bib1.bib21"><label>21</label><mixed-citation>
+IPCC: Climate Change 2013: The Physical Science Basis. Contribution of
+Working Group I to the Fifth Assessment Report of the Intergovernmental Panel
+on Climate Change, Cambridge University Press, Cambridge, UK and New York,
+NY, USA, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib22"><label>22</label><mixed-citation>Kamae, Y. and Watanabe, M.: Tropospheric adjustment to increasing CO<inline-formula><mml:math display="inline"><mml:msub><mml:mi/><mml:mn mathvariant="normal">2</mml:mn></mml:msub></mml:math></inline-formula>:
+its timescale and the role of land-sea contrast, Clim. Dynam., 41,
+3007–3024, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib23"><label>23</label><mixed-citation>Lawrence, B. N., Balaji, V., Bentley, P., Callaghan, S., DeLuca, C., Denvil,
+S., Devine, G., Elkington, M., Ford, R. W., Guilyardi, E., Lautenschlager,
+M., Morgan, M., Moine, M.-P., Murphy, S., Pascoe, C., Ramthun, H., Slavin,
+P., Steenman-Clark, L., Toussaint, F., Treshansky, A., and Valcke, S.:
+Describing Earth system simulations with the Metafor CIM, Geosci. Model Dev.,
+5, 1493–1500, <ext-link xlink:href="http://dx.doi.org/10.5194/gmd-5-1493-2012" ext-link-type="DOI">10.5194/gmd-5-1493-2012</ext-link>, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib24"><label>24</label><mixed-citation>
+Li, C., Stevens, B., and Marotzke, J.: Eurasian winter cooling in the warming
+hiatus of 1998–2012, Geophys. Res. Lett., 42, 8131–8139, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib25"><label>25</label><mixed-citation>
+Meehl, G. A., Boer, G. J., Covey, C., Latif, M., and Stouffer, R. J.:
+Intercomparison makes for a better climate model, Eos, Transactions American
+Geophysical Union, 78, 445–451, 1997.</mixed-citation></ref>
+      <ref id="bib1.bib26"><label>26</label><mixed-citation>
+Meehl, G. A., Boer, G. J., Covey, C., Latif, M., and Stouffer, R. J.: The
+Coupled Model Intercomparison Project (CMIP), B. Am. Meteorol. Soc., 81,
+313–318, 2000.</mixed-citation></ref>
+      <ref id="bib1.bib27"><label>27</label><mixed-citation>
+Meehl, G. A., Covey, C., Taylor, K. E., Delworth, T., Stouffer, R. J., Latif,
+M., McAvaney, B., and Mitchell, J. F. B.: THE WCRP CMIP3 Multimodel Dataset:
+A New Era in Climate Change Research, B. Am. Meteorol. Soc., 88, 1383–1394,
+2007.</mixed-citation></ref>
+      <ref id="bib1.bib28"><label>28</label><mixed-citation>Meehl, G. A., Moss, R., Taylor, K. E., Eyring, V., Stouffer, R. J., Bony, S.,
+and Stevens, B.: Climate Model Intercomparisons: Preparing for the Next
+Phase, Eos Trans. AGU, 59, 77, <ext-link xlink:href="http://dx.doi.org/10.1002/2014EO090001" ext-link-type="DOI">10.1002/2014EO090001</ext-link>,  2014.</mixed-citation></ref>
+      <ref id="bib1.bib29"><label>29</label><mixed-citation>
+Moss, R. H., Edmonds, J. A., Hibbard, K. A., Manning, M. R., Rose, S. K., van
+Vuuren, D. P., Carter, T. R., Emori, S., Kainuma, M., Kram, T., Meehl, G. A.,
+Mitchell, J. F. B., Nakicenovic, N., Riahi, K., Smith, S. J., Stouffer, R.
+J., Thomson, A. M., Weyant, J. P., and Wilbanks, T. J.: The next generation
+of scenarios for climate change research and assessment, Nature, 463,
+747–756, 2010.</mixed-citation></ref>
+      <ref id="bib1.bib30"><label>30</label><mixed-citation>
+Murphy, J. M. and Mitchell, J. F. B.: Transient-Response of the Hadley-Center
+Coupled Ocean-Atmosphere Model to Increasing Carbon-Dioxide. 2. Spatial and
+Temporal Structure of Response, J. Climate, 8, 57–80, 1995.</mixed-citation></ref>
+      <ref id="bib1.bib31"><label>31</label><mixed-citation>
+Myhre, G., Shindell, D., Breìon, F.-M., Collins, W., Fuglestvedt, J.,
+Huang, J., Koch, D., Lamarque, J.-F., Lee, D., Mendoza, B., Nakajima, T., Robock, A., Stephens,
+G., Takemura, T., and Zhang, H.: Anthropogenic and Natural Radiative
+Forcing, in: Climate Change 2013: The Physical Science Basis. Contribution of
+Working Group I to the Fifth Assessment Report of the Intergovernmental Panel
+on Climate Change, edited by: Stocker, T. F., Qin, D., Plattner, G.-K.,
+Tignor, M., Allen, S. K., Boschung, J., Nauels, A., Xia, Y., Bex, V., and
+Midgley, P. M., Cambridge University Press, Cambridge, UK and New York, NY,
+USA, 2013.</mixed-citation></ref>
+      <ref id="bib1.bib32"><label>32</label><mixed-citation>O'Neill, B. C., Kriegler, E., Ebi, K. L., Kemp-Benedict, E., Riahi, K.,
+Rothman, D. S., van Ruijven, B. J., van Vuuren, D. P., Birkmann, J., Kok, K.,
+Levy, M., and Solecki, W.: The roads ahead: Narratives for shared
+socioeconomic pathways describing world futures in the 21st century, Global
+Environ. Chang., <ext-link xlink:href="http://dx.doi.org/10.1016/j.gloenvcha.2015.01.004" ext-link-type="DOI">10.1016/j.gloenvcha.2015.01.004</ext-link>, online first,
+2015.</mixed-citation></ref>
+      <ref id="bib1.bib33"><label>33</label><mixed-citation>
+Phillips, A. S., Deser, C., and Fasullo, J.: Evaluating Modes of Variability
+in Climate Models, Eos Trans. AGU, 95, 453–455, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib34"><label>34</label><mixed-citation>
+Rauser, F., Gleckler, P., and Marotzke, J.: Rethinking the Default
+Construction of Multimodel Climate Ensembles, B. Am. Meteorol. Soc., 96,
+911–919, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib35"><label>35</label><mixed-citation>
+Sentman, L. T., Shevliakova, E., Stouffer, R. J., and Malyshev, S.: Time
+Scales of Terrestrial Carbon Response Related to Land-Use Application:
+Implications for Initializing an Earth System Model, Earth Interact., 15,
+1–16, 2011.</mixed-citation></ref>
+      <ref id="bib1.bib36"><label>36</label><mixed-citation>
+Sherwood, S. C., Bony, S., Boucher, O., Bretherton, C., Forster, P. M.,
+Gregory, J. M., and Stevens, B.: Adjustments in the Forcing-Feedback
+Framework for Understanding Climate Change, B. Am. Meteorol. Soc., 96,
+217–228, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib37"><label>37</label><mixed-citation>
+Stevens, B.: Rethinking the Lower Bound on Aerosol Radiative Forcing, J.
+Climate, 28, 4794–4819, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib38"><label>38</label><mixed-citation>
+Stott, P. A., Mitchell, J. F. B., Allen, M. R., Delworth, T. L., Gregory, J.
+M., Meehl, G. A., and Santer, B. D.: Observational constraints on past
+attributable warming and predictions of future global warming, J. Climate,
+19, 3055–3069, 2006.</mixed-citation></ref>
+      <ref id="bib1.bib39"><label>39</label><mixed-citation>
+Stouffer, R. J., Weaver, A. J., and Eby, M.: A method for obtaining
+pre-twentieth century initial conditions for use in climate change studies,
+Clim. Dynam., 23, 327–339, 2004.</mixed-citation></ref>
+      <ref id="bib1.bib40"><label>40</label><mixed-citation>
+Stouffer, R. J., Eyring, V., Meehl, G. A., Bony, S., Senior, C., Stevens, B.,
+and Taylor, K. E.: CMIP5 Scientific Gaps and Recommendations for CMIP6, B.
+Am. Meteorol. Soc., submitted, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib41"><label>41</label><mixed-citation>Taylor, K. E., Stouffer, R. J., and Meehl, G. A.: A Summary of the CMIP5
+Experiment Design, available at:
+<uri>http://cmip.llnl.gov/cmip5/docs/Taylor_CMIP5_design.pdf</uri> (last access:
+13 May 2016), 2009.</mixed-citation></ref>
+      <ref id="bib1.bib42"><label>42</label><mixed-citation>
+Taylor, K. E., Stouffer, R. J., and Meehl, G. A.: An Overview of Cmip5 and
+the Experiment Design, B. Am. Meteorol. Soc., 93, 485–498, 2012.</mixed-citation></ref>
+      <ref id="bib1.bib43"><label>43</label><mixed-citation>Teixeira, J., Waliser, D., Ferraro, R., Gleckler, P., Lee, T., and Potter,
+G.: Satellite Observations for CMIP5: The Genesis of Obs4MIPs, B. Am.
+Meteorol. Soc., 95, 1329–1334, 2014.
+ </mixed-citation></ref><?xmltex \hack{\newpage}?>
+      <ref id="bib1.bib44"><label>44</label><mixed-citation>
+Trenberth, K. and Asrar, G.: Challenges and Opportunities in Water Cycle
+Research: WCRP Contributions, Surv. Geophys., 35, 515–532, 2014.</mixed-citation></ref>
+      <ref id="bib1.bib45"><label>45</label><mixed-citation>van Vuuren, D. P., Edmonds, J., Kainuma, M., Riahi, K., Thomson, A., Hibbard,
+K., Hurtt, G. C., Kram, T., Krey, V., Lamarque, J. F., Masui, T.,
+Meinshausen, M., Nakicenovic, N., Smith, S. J., and Rose, S. K.: The
+representative concentration pathways: an overview, Climatic Change, 109,
+5–31, 2011.
+ </mixed-citation></ref><?xmltex \hack{\newpage}?>
+      <ref id="bib1.bib46"><label>46</label><mixed-citation>Williams, D. N., Balaji, V., Cinquini, L., Denvil, S., Duffy, D., Evans, B.,
+Ferraro, R., Hansen, R., Lautenschlager, M., and Trenham, C.: A Global
+Repository for Planet-Sized Experiments and Observations, B. Am. Meteorol.
+Soc., <ext-link xlink:href="http://dx.doi.org/10.1175/bams-d-15-00132.1" ext-link-type="DOI">10.1175/bams-d-15-00132.1</ext-link>, online first, 2015.</mixed-citation></ref>
+      <ref id="bib1.bib47"><label>47</label><mixed-citation>
+Williams, K. and Webb, M.: A quantitative performance assessment of cloud
+regimes in climate models, Clim. Dynam., 33, 141–157, 2009.</mixed-citation></ref>
+
+  </ref-list><app-group content-type="float"><app><title/>
+
+    </app></app-group></back>
+    <!--<article-title-html>Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6)
+experimental design and organization</article-title-html>
+<abstract-html><p class="p">By coordinating the design and distribution of global
+climate model simulations of the past, current,  and future climate, the
+Coupled Model Intercomparison Project (CMIP) has become one of the
+foundational elements of climate science. However, the need to address an
+ever-expanding range of scientific questions arising from more and more
+research communities has made it necessary to revise the organization of
+CMIP. After a long and wide community consultation, a new and more federated
+structure has been put in place. It consists of three major elements: (1) a
+handful of common experiments, the DECK (Diagnostic, Evaluation and
+Characterization of Klima) and CMIP historical simulations (1850–near present) that will maintain continuity and help document basic
+characteristics of models across different phases of CMIP; (2) common
+standards, coordination, infrastructure, and documentation that will
+facilitate the distribution of model outputs and the characterization of the
+model ensemble; and (3) an ensemble of CMIP-Endorsed Model Intercomparison
+Projects (MIPs) that will be specific to a particular phase of CMIP (now
+CMIP6) and that will build on the DECK and CMIP historical simulations to
+address a large range of specific questions and fill the scientific gaps of
+the previous CMIP phases. The DECK and CMIP historical simulations, together
+with the use of CMIP data standards, will be the entry cards for models
+participating in CMIP. Participation in CMIP6-Endorsed MIPs by individual
+modelling groups will be at their own discretion and will depend on their
+scientific interests and priorities. With the Grand Science Challenges of
+the World Climate Research Programme (WCRP) as its scientific backdrop,
+CMIP6 will address three broad questions:
+<ul class="itemize"><li class="item"><div class="para"><p class="p">How does the Earth system
+respond to forcing?</p></div></li><li class="item"><div class="para"><p class="p">What are the origins and consequences of
+systematic model biases?</p></div></li><li class="item"><div class="para"><p class="p">How can we assess future climate changes
+given internal climate variability, predictability, and uncertainties in
+scenarios?</p></div></li></ul>
+This CMIP6 overview paper presents the background and rationale
+for the new structure of CMIP, provides a detailed description of the DECK
+and CMIP6 historical simulations, and includes a brief introduction to the
+21 CMIP6-Endorsed MIPs.</p></abstract-html>
+<ref-html id="bib1.bib1"><label>1</label><mixed-citation>
+Bony, S., Bellon, G., Klocke, D., Sherwood, S., Fermepin, S., and Denvil,
+S.: Robust direct effect of carbon dioxide on tropical circulation and
+regional precipitation, Nat. Geosci., 6, 447–451, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib2"><label>2</label><mixed-citation>
+Bony, S., Stevens, B., Frierson, D. M. W., Jakob, C., Kageyama, M., Pincus,
+R., Shepherd, T. G., Sherwood, S. C., Siebesma, A. P., Sobel, A. H.,
+Watanabe, M., and Webb, M. J.: Clouds, circulation and climate sensitivity,
+Nat. Geosci., 8, 261–268, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib3"><label>3</label><mixed-citation>
+Brasseur, G. and Carlson, D.: Future directions for the World Climate
+Research Programme, Eos, Transactions American Geophysical Union, 96,
+<a href="http://dx.doi.org/10.1029/2015EO033577" target="_blank">doi:10.1029/2015EO033577</a>,
+2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib4"><label>4</label><mixed-citation>
+CMIP Panel:  WCRP Coupled Model Intercomparison Project (CMIP), available
+at: <a href="http://www.wcrp-climate.org/index.php/wgcm-cmip/about-cmip" target="_blank">http://www.wcrp-climate.org/index.php/wgcm-cmip/about-cmip</a>, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib5"><label>5</label><mixed-citation>
+Crowley, T. J.: Causes of climate change over the past 1000 years, Science, 289, 270–277, 2000.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib6"><label>6</label><mixed-citation>
+Cubasch, U., Wuebbles, D., Chen, D., Facchini, M. C., Frame, D., Mahowald, N., and
+Winther, J.-G.: Introduction, in: Climate Change 2013: The Physical Science
+Basis. Contribution of Working Group I to the Fifth Assessment Report of the
+Intergovernmental Panel on Climate Change, edited by: Stocker, T. F., Qin, D.,
+Plattner, G.-K., Tignor, M., Allen, S. K., Boschung, J., Nauels, A., Xia, Y.,
+Bex, V., and Midgley, P. M., Cambridge University Press, Cambridge, UK and
+New York, NY, USA, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib7"><label>7</label><mixed-citation>
+Deser, C., Knutti, R., Solomon, S., and Phillips, A. S.: Communication of the
+role of natural variability in future North American climate, Nat. Clim.
+Change, 2, 775–779, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib8"><label>8</label><mixed-citation>
+Eyring, V., Righi, M., Lauer, A., Evaldsson, M., Wenzel, S., Jones, C., Anav, A., Andrews, O., Cionni, I., Davin,
+E. L., Deser, C., Ehbrecht, C., Friedlingstein, P., Gleckler, P., Gottschaldt, K.-D., Hagemann, S.,
+Juckes, M., Kindermann, S., Krasting, J., Kunert, D., Levine, R., Loew, A., Mäkelä, J., Martin, G.,
+Mason, E., Phillips, A. S., Read, S., Rio, C., Roehrig, R., Senftleben, D., Sterl, A., van Ulft, L. H., Walton, J., Wang, S., and Williams,
+K. D.: ESMValTool (v1.0) – a community diagnostic and performance metrics tool for routine evaluation of
+Earth system models in CMIP, Geosci. Model Dev., 9, 1747–1802, <a href="http://dx.doi.org/10.5194/gmd-9-1747-2016" target="_blank">doi:10.5194/gmd-9-1747-2016</a>, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib9"><label>9</label><mixed-citation>
+Ferraro, R., Waliser, D. E., Gleckler, P., Taylor, K. E., and Eyring, V.:
+Evolving obs4MIPs to Support the Sixth Coupled Model Intercomparison Project
+(CMIP6), B. Am. Meteorol. Soc., <a href="http://dx.doi.org/10.1175/BAMS-D-14-00216.1" target="_blank">doi:10.1175/BAMS-D-14-00216.1</a>, online
+first,
+2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib10"><label>10</label><mixed-citation>
+Flato, G., Marotzke, J., Abiodun, B., Braconnot, P., Chou, S. C., Collins,
+W., Cox, P., Driouech, F., Emori, S., Eyring, V., Forest, C., Gleckler, P.,
+Guilyardi, E., Jakob, C., Kattsov, V., Reason, C., and Rummukainen, M.:
+Evaluation of Climate Models, in: Climate Change 2013: The Physical Science
+Basis. Contribution of Working Group I to the Fifth Assessment Report of the
+Intergovernmental Panel on Climate Change, edited by: Stocker, T. F., Qin,
+D., Plattner, G.-K., Tignor, M., Allen, S. K., Boschung, J., Nauels, A., Xia,
+Y., Bex, V., and Midgley, P. M., Cambridge University Press, Cambridge, UK
+and New York, NY, USA, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib11"><label>11</label><mixed-citation>
+Gates, W. L., Boyle, J. S., Covey, C., Dease, C. G., Doutriaux, C. M., Drach,
+R. S., Fiorino, M., Gleckler, P. J., Hnilo, J. J., Marlais, S. M., Phillips,
+T. J., Potter, G. L., Santer, B. D., Sperber, K. R., Taylor, K. E., and
+Williams, D. N.: An Overview of the Results of the Atmospheric Model
+Intercomparison Project (AMIP I), B. Am. Meteorol. Soc., 80, 29–55, 1999.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib12"><label>12</label><mixed-citation>
+Geoffroy, O., Saint-Martin, D., Olivie, D. J. L., Voldoire, A., Bellon, G.,
+and Tyteca, S.: Transient Climate Response in a Two-Layer Energy-Balance
+Model. Part I: Analytical Solution and Parameter Calibration Using CMIP5
+AOGCM Experiments, J. Climate, 26, 1841–1857, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib13"><label>13</label><mixed-citation>
+Gleckler, P. J., Doutriaux, C., Durack P. J., Taylor K. E., Zhang, Y.,
+Williams, D. N., Mason, E., and Servonnat, J.: A More Powerful Reality Test
+for Climate Models, Eos Trans. AGU, <a href="http://dx.doi.org/10.1029/2016EO051663" target="_blank">doi:10.1029/2016EO051663</a>, 2016.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib14"><label>14</label><mixed-citation>
+Gregory, J. and Webb, M.: Tropospheric adjustment induces a cloud component
+in CO<sub>2</sub> forcing, J. Climate, 21, 58–71, 2008.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib15"><label>15</label><mixed-citation>
+Gregory, J. M.: Long-term effect of volcanic forcing on ocean heat content,
+Geophys. Res. Lett., 37, L22701, <a href="http://dx.doi.org/10.1029/2010gl045507" target="_blank">doi:10.1029/2010gl045507</a>, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib16"><label>16</label><mixed-citation>
+Gregory, J. M., Ingram, W. J., Palmer, M. A., Jones, G. S., Stott, P. A.,
+Thorpe, R. B., Lowe, J. A., Johns, T. C., and Williams, K. D.: A new method
+for diagnosing radiative forcing and climate sensitivity, Geophys. Res.
+Lett., 31, L03205, <a href="http://dx.doi.org/10.1029/2003gl018747" target="_blank">doi:10.1029/2003gl018747</a>, 2004.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib17"><label>17</label><mixed-citation>
+Gregory, J. M., Bi, D., Collier, M. A., Dix, M. R., Hirst, A. C., Hu, A.,
+Huber, M., Knutti, R., Marsland, S. J., Meinshausen, M., Rashid, H. A.,
+Rotstayn, L. D., Schurer, A., and Church, J. A.: Climate models without
+preindustrial volcanic forcing underestimate historical ocean thermal
+expansion, Geophys. Res. Lett., 40, 1600–1604, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib18"><label>18</label><mixed-citation>
+Hegerl, G. C., Zwiers, F. W., Braconnot, P., Gillett, N. P., Luo, Y., Marengo
+Orsini, J. A., Nicholls, N., Penner, J. E., and Stott, P. A.: Understanding
+and Attributing Climate Change, in: Climate Change 2007: The Physical Science
+Basis. Contribution of Working Group I to the Fourth Assessment Report of the
+Intergovernmental Panel on Climate Change, edited by: Solomon, S., Qin, D.,
+Manning, M., Chen, Z., Marquis, M., Averyt, K. B., Tignor, M., and Miller, H.
+L., Cambridge University Press, Cambridge, UK and New York, NY, USA, 2007.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib19"><label>19</label><mixed-citation>
+Houghton, R. A.: How well do we know the flux of CO<sub>2</sub> from land-use
+change?, Tellus B, 62, 337–351, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib20"><label>20</label><mixed-citation>
+Hurtt, G. C., Chini, L. P., Frolking, S., Betts, R. A., Feddema, J., Fischer,
+G., Fisk, J. P., Hibbard, K., Houghton, R. A., Janetos, A., Jones, C. D.,
+Kindermann, G., Kinoshita, T., Goldewijk, K. K., Riahi, K., Shevliakova, E.,
+Smith, S., Stehfest, E., Thomson, A., Thornton, P., van Vuuren, D. P., and
+Wang, Y. P.: Harmonization of land-use scenarios for the period 1500–2100:
+600 years of global gridded annual land-use transitions, wood harvest, and
+resulting secondary lands, Climatic Change, 109, 117–161, 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib21"><label>21</label><mixed-citation>
+IPCC: Climate Change 2013: The Physical Science Basis. Contribution of
+Working Group I to the Fifth Assessment Report of the Intergovernmental Panel
+on Climate Change, Cambridge University Press, Cambridge, UK and New York,
+NY, USA, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib22"><label>22</label><mixed-citation>
+Kamae, Y. and Watanabe, M.: Tropospheric adjustment to increasing CO<sub>2</sub>:
+its timescale and the role of land-sea contrast, Clim. Dynam., 41,
+3007–3024, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib23"><label>23</label><mixed-citation>
+Lawrence, B. N., Balaji, V., Bentley, P., Callaghan, S., DeLuca, C., Denvil,
+S., Devine, G., Elkington, M., Ford, R. W., Guilyardi, E., Lautenschlager,
+M., Morgan, M., Moine, M.-P., Murphy, S., Pascoe, C., Ramthun, H., Slavin,
+P., Steenman-Clark, L., Toussaint, F., Treshansky, A., and Valcke, S.:
+Describing Earth system simulations with the Metafor CIM, Geosci. Model Dev.,
+5, 1493–1500, <a href="http://dx.doi.org/10.5194/gmd-5-1493-2012" target="_blank">doi:10.5194/gmd-5-1493-2012</a>, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib24"><label>24</label><mixed-citation>
+Li, C., Stevens, B., and Marotzke, J.: Eurasian winter cooling in the warming
+hiatus of 1998–2012, Geophys. Res. Lett., 42, 8131–8139, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib25"><label>25</label><mixed-citation>
+Meehl, G. A., Boer, G. J., Covey, C., Latif, M., and Stouffer, R. J.:
+Intercomparison makes for a better climate model, Eos, Transactions American
+Geophysical Union, 78, 445–451, 1997.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib26"><label>26</label><mixed-citation>
+Meehl, G. A., Boer, G. J., Covey, C., Latif, M., and Stouffer, R. J.: The
+Coupled Model Intercomparison Project (CMIP), B. Am. Meteorol. Soc., 81,
+313–318, 2000.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib27"><label>27</label><mixed-citation>
+Meehl, G. A., Covey, C., Taylor, K. E., Delworth, T., Stouffer, R. J., Latif,
+M., McAvaney, B., and Mitchell, J. F. B.: THE WCRP CMIP3 Multimodel Dataset:
+A New Era in Climate Change Research, B. Am. Meteorol. Soc., 88, 1383–1394,
+2007.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib28"><label>28</label><mixed-citation>
+Meehl, G. A., Moss, R., Taylor, K. E., Eyring, V., Stouffer, R. J., Bony, S.,
+and Stevens, B.: Climate Model Intercomparisons: Preparing for the Next
+Phase, Eos Trans. AGU, 59, 77, <a href="http://dx.doi.org/10.1002/2014EO090001" target="_blank">doi:10.1002/2014EO090001</a>,  2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib29"><label>29</label><mixed-citation>
+Moss, R. H., Edmonds, J. A., Hibbard, K. A., Manning, M. R., Rose, S. K., van
+Vuuren, D. P., Carter, T. R., Emori, S., Kainuma, M., Kram, T., Meehl, G. A.,
+Mitchell, J. F. B., Nakicenovic, N., Riahi, K., Smith, S. J., Stouffer, R.
+J., Thomson, A. M., Weyant, J. P., and Wilbanks, T. J.: The next generation
+of scenarios for climate change research and assessment, Nature, 463,
+747–756, 2010.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib30"><label>30</label><mixed-citation>
+Murphy, J. M. and Mitchell, J. F. B.: Transient-Response of the Hadley-Center
+Coupled Ocean-Atmosphere Model to Increasing Carbon-Dioxide. 2. Spatial and
+Temporal Structure of Response, J. Climate, 8, 57–80, 1995.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib31"><label>31</label><mixed-citation>
+Myhre, G., Shindell, D., Breìon, F.-M., Collins, W., Fuglestvedt, J.,
+Huang, J., Koch, D., Lamarque, J.-F., Lee, D., Mendoza, B., Nakajima, T., Robock, A., Stephens,
+G., Takemura, T., and Zhang, H.: Anthropogenic and Natural Radiative
+Forcing, in: Climate Change 2013: The Physical Science Basis. Contribution of
+Working Group I to the Fifth Assessment Report of the Intergovernmental Panel
+on Climate Change, edited by: Stocker, T. F., Qin, D., Plattner, G.-K.,
+Tignor, M., Allen, S. K., Boschung, J., Nauels, A., Xia, Y., Bex, V., and
+Midgley, P. M., Cambridge University Press, Cambridge, UK and New York, NY,
+USA, 2013.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib32"><label>32</label><mixed-citation>
+O'Neill, B. C., Kriegler, E., Ebi, K. L., Kemp-Benedict, E., Riahi, K.,
+Rothman, D. S., van Ruijven, B. J., van Vuuren, D. P., Birkmann, J., Kok, K.,
+Levy, M., and Solecki, W.: The roads ahead: Narratives for shared
+socioeconomic pathways describing world futures in the 21st century, Global
+Environ. Chang., <a href="http://dx.doi.org/10.1016/j.gloenvcha.2015.01.004" target="_blank">doi:10.1016/j.gloenvcha.2015.01.004</a>, online first,
+2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib33"><label>33</label><mixed-citation>
+Phillips, A. S., Deser, C., and Fasullo, J.: Evaluating Modes of Variability
+in Climate Models, Eos Trans. AGU, 95, 453–455, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib34"><label>34</label><mixed-citation>
+Rauser, F., Gleckler, P., and Marotzke, J.: Rethinking the Default
+Construction of Multimodel Climate Ensembles, B. Am. Meteorol. Soc., 96,
+911–919, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib35"><label>35</label><mixed-citation>
+Sentman, L. T., Shevliakova, E., Stouffer, R. J., and Malyshev, S.: Time
+Scales of Terrestrial Carbon Response Related to Land-Use Application:
+Implications for Initializing an Earth System Model, Earth Interact., 15,
+1–16, 2011.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib36"><label>36</label><mixed-citation>
+Sherwood, S. C., Bony, S., Boucher, O., Bretherton, C., Forster, P. M.,
+Gregory, J. M., and Stevens, B.: Adjustments in the Forcing-Feedback
+Framework for Understanding Climate Change, B. Am. Meteorol. Soc., 96,
+217–228, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib37"><label>37</label><mixed-citation>
+Stevens, B.: Rethinking the Lower Bound on Aerosol Radiative Forcing, J.
+Climate, 28, 4794–4819, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib38"><label>38</label><mixed-citation>
+Stott, P. A., Mitchell, J. F. B., Allen, M. R., Delworth, T. L., Gregory, J.
+M., Meehl, G. A., and Santer, B. D.: Observational constraints on past
+attributable warming and predictions of future global warming, J. Climate,
+19, 3055–3069, 2006.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib39"><label>39</label><mixed-citation>
+Stouffer, R. J., Weaver, A. J., and Eby, M.: A method for obtaining
+pre-twentieth century initial conditions for use in climate change studies,
+Clim. Dynam., 23, 327–339, 2004.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib40"><label>40</label><mixed-citation>
+Stouffer, R. J., Eyring, V., Meehl, G. A., Bony, S., Senior, C., Stevens, B.,
+and Taylor, K. E.: CMIP5 Scientific Gaps and Recommendations for CMIP6, B.
+Am. Meteorol. Soc., submitted, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib41"><label>41</label><mixed-citation>
+Taylor, K. E., Stouffer, R. J., and Meehl, G. A.: A Summary of the CMIP5
+Experiment Design, available at:
+<a href="http://cmip.llnl.gov/cmip5/docs/Taylor_CMIP5_design.pdf" target="_blank">http://cmip.llnl.gov/cmip5/docs/Taylor_CMIP5_design.pdf</a> (last access:
+13 May 2016), 2009.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib42"><label>42</label><mixed-citation>
+Taylor, K. E., Stouffer, R. J., and Meehl, G. A.: An Overview of Cmip5 and
+the Experiment Design, B. Am. Meteorol. Soc., 93, 485–498, 2012.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib43"><label>43</label><mixed-citation>
+Teixeira, J., Waliser, D., Ferraro, R., Gleckler, P., Lee, T., and Potter,
+G.: Satellite Observations for CMIP5: The Genesis of Obs4MIPs, B. Am.
+Meteorol. Soc., 95, 1329–1334, 2014.
+
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib44"><label>44</label><mixed-citation>
+Trenberth, K. and Asrar, G.: Challenges and Opportunities in Water Cycle
+Research: WCRP Contributions, Surv. Geophys., 35, 515–532, 2014.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib45"><label>45</label><mixed-citation>
+van Vuuren, D. P., Edmonds, J., Kainuma, M., Riahi, K., Thomson, A., Hibbard,
+K., Hurtt, G. C., Kram, T., Krey, V., Lamarque, J. F., Masui, T.,
+Meinshausen, M., Nakicenovic, N., Smith, S. J., and Rose, S. K.: The
+representative concentration pathways: an overview, Climatic Change, 109,
+5–31, 2011.
+
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib46"><label>46</label><mixed-citation>
+Williams, D. N., Balaji, V., Cinquini, L., Denvil, S., Duffy, D., Evans, B.,
+Ferraro, R., Hansen, R., Lautenschlager, M., and Trenham, C.: A Global
+Repository for Planet-Sized Experiments and Observations, B. Am. Meteorol.
+Soc., <a href="http://dx.doi.org/10.1175/bams-d-15-00132.1" target="_blank">doi:10.1175/bams-d-15-00132.1</a>, online first, 2015.
+</mixed-citation></ref-html>
+<ref-html id="bib1.bib47"><label>47</label><mixed-citation>
+Williams, K. and Webb, M.: A quantitative performance assessment of cloud
+regimes in climate models, Clim. Dynam., 33, 141–157, 2009.
+</mixed-citation></ref-html>--></article>
